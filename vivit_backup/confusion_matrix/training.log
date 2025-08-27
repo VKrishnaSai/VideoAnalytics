@@ -1,0 +1,116 @@
+2025-02-25 00:12:46,464 INFO: Training started.
+2025-02-25 00:12:48,082 INFO: Using device: cuda
+2025-02-25 00:28:17,819 INFO: Training started.
+2025-02-25 00:28:19,432 INFO: Using device: cuda
+2025-02-25 00:35:25,304 INFO: Epoch 1/10 -- Loss: 3.8013, Accuracy: 0.0378, Precision: 0.0118, Recall: 0.0242, F1: 0.0155
+2025-02-25 00:35:25,386 INFO: Saved checkpoint: checkpoints\checkpoint_epoch_1.pth
+2025-02-25 00:35:25,462 INFO: New best model saved at: checkpoints\best_checkpoint.pth
+2025-02-25 00:42:15,156 INFO: Epoch 2/10 -- Loss: 3.6940, Accuracy: 0.0582, Precision: 0.0151, Recall: 0.0354, F1: 0.0201
+2025-02-25 00:42:15,236 INFO: Saved checkpoint: checkpoints\checkpoint_epoch_2.pth
+2025-02-25 00:42:15,317 INFO: New best model saved at: checkpoints\best_checkpoint.pth
+2025-02-25 00:46:25,037 INFO: Training started.
+2025-02-25 00:46:26,651 INFO: Using device: cuda
+2025-02-25 00:53:02,606 INFO: Epoch 1/10 -- Loss: 3.8306, Accuracy: 0.0359, Precision: 0.0062, Recall: 0.0208, F1: 0.0092
+2025-02-25 00:53:02,701 INFO: Saved checkpoint: checkpoints\checkpoint_epoch_1.pth
+2025-02-25 00:53:02,782 INFO: New best model saved at: checkpoints\best_checkpoint.pth
+2025-02-25 00:59:55,767 INFO: Epoch 2/10 -- Loss: 3.7137, Accuracy: 0.0533, Precision: 0.0163, Recall: 0.0308, F1: 0.0186
+2025-02-25 00:59:55,837 INFO: Saved checkpoint: checkpoints\checkpoint_epoch_2.pth
+2025-02-25 00:59:55,933 INFO: New best model saved at: checkpoints\best_checkpoint.pth
+2025-02-25 01:06:27,015 INFO: Epoch 3/10 -- Loss: 3.6699, Accuracy: 0.0660, Precision: 0.0184, Recall: 0.0397, F1: 0.0235
+2025-02-25 01:06:27,084 INFO: Saved checkpoint: checkpoints\checkpoint_epoch_3.pth
+2025-02-25 01:06:27,160 INFO: New best model saved at: checkpoints\best_checkpoint.pth
+2025-02-25 01:13:02,868 INFO: Epoch 4/10 -- Loss: 3.6309, Accuracy: 0.0766, Precision: 0.0514, Recall: 0.0488, F1: 0.0289
+2025-02-25 01:13:02,943 INFO: Saved checkpoint: checkpoints\checkpoint_epoch_4.pth
+2025-02-25 01:13:03,032 INFO: New best model saved at: checkpoints\best_checkpoint.pth
+2025-02-25 01:19:36,088 INFO: Epoch 5/10 -- Loss: 3.5743, Accuracy: 0.0854, Precision: 0.0260, Recall: 0.0528, F1: 0.0311
+2025-02-25 01:19:36,158 INFO: Saved checkpoint: checkpoints\checkpoint_epoch_5.pth
+2025-02-25 01:19:36,246 INFO: New best model saved at: checkpoints\best_checkpoint.pth
+2025-02-25 01:26:06,031 INFO: Epoch 6/10 -- Loss: 3.5274, Accuracy: 0.0970, Precision: 0.0326, Recall: 0.0617, F1: 0.0377
+2025-02-25 01:26:06,114 INFO: Saved checkpoint: checkpoints\checkpoint_epoch_6.pth
+2025-02-25 01:26:06,190 INFO: New best model saved at: checkpoints\best_checkpoint.pth
+2025-02-25 01:32:39,651 INFO: Epoch 7/10 -- Loss: 3.4887, Accuracy: 0.1038, Precision: 0.0377, Recall: 0.0662, F1: 0.0403
+2025-02-25 01:32:39,721 INFO: Saved checkpoint: checkpoints\checkpoint_epoch_7.pth
+2025-02-25 01:32:39,811 INFO: New best model saved at: checkpoints\best_checkpoint.pth
+2025-02-25 01:39:11,249 INFO: Epoch 8/10 -- Loss: 3.4295, Accuracy: 0.1174, Precision: 0.0469, Recall: 0.0780, F1: 0.0523
+2025-02-25 01:39:11,322 INFO: Saved checkpoint: checkpoints\checkpoint_epoch_8.pth
+2025-02-25 01:39:11,400 INFO: New best model saved at: checkpoints\best_checkpoint.pth
+2025-02-25 01:45:44,098 INFO: Epoch 9/10 -- Loss: 3.3629, Accuracy: 0.1397, Precision: 0.0744, Recall: 0.0936, F1: 0.0672
+2025-02-25 01:45:44,186 INFO: Saved checkpoint: checkpoints\checkpoint_epoch_9.pth
+2025-02-25 01:45:44,267 INFO: New best model saved at: checkpoints\best_checkpoint.pth
+2025-02-25 01:52:18,621 INFO: Epoch 10/10 -- Loss: 3.2935, Accuracy: 0.1523, Precision: 0.0636, Recall: 0.1016, F1: 0.0728
+2025-02-25 01:52:18,696 INFO: Saved checkpoint: checkpoints\checkpoint_epoch_10.pth
+2025-02-25 01:52:18,764 INFO: New best model saved at: checkpoints\best_checkpoint.pth
+2025-02-25 01:52:18,798 INFO: Final model saved as vivit_model.pth
+2025-02-25 01:54:07,858 INFO: Training started.
+2025-02-25 01:54:08,449 INFO: Using device: cuda
+2025-02-25 01:54:14,124 INFO: Training started.
+2025-02-25 01:54:14,729 INFO: Using device: cuda
+2025-02-28 12:37:55,459 INFO: Training started.
+2025-02-28 12:37:55,556 INFO: Using device: cuda
+2025-02-28 12:40:25,971 INFO: Training started.
+2025-02-28 12:40:26,048 INFO: Using device: cuda
+2025-02-28 12:46:40,666 INFO: Epoch 1/5 -- Train Loss: 4.0268, Train Acc: 0.0226
+2025-02-28 12:48:16,297 INFO: Validation Loss: 3.8047, Val Acc: 0.0483, Precision: 0.0011, Recall: 0.0222, F1: 0.0020
+2025-02-28 12:48:16,474 INFO: Saved checkpoint: checkpoints_28feb\checkpoint_epoch_1.pth
+2025-02-28 12:48:16,635 INFO: New best model saved at: checkpoints_28feb\best_checkpoint.pth
+2025-02-28 12:52:13,494 INFO: Epoch 2/5 -- Train Loss: 3.8823, Train Acc: 0.0434
+2025-02-28 12:53:19,027 INFO: Validation Loss: 3.7988, Val Acc: 0.0345, Precision: 0.0008, Recall: 0.0222, F1: 0.0015
+2025-02-28 12:53:19,201 INFO: Saved checkpoint: checkpoints_28feb\checkpoint_epoch_2.pth
+2025-02-28 12:53:19,370 INFO: New best model saved at: checkpoints_28feb\best_checkpoint.pth
+2025-02-28 12:55:18,855 INFO: Training started.
+2025-02-28 12:55:18,926 INFO: Using device: cuda
+2025-02-28 12:55:19,007 INFO: Starting full training with best learning rate: 0.0001
+2025-02-28 12:59:10,755 INFO: Epoch 1/20 -- Train Loss: 3.8749, Train Acc: 0.0312
+2025-02-28 13:00:06,794 INFO: Validation Loss: 3.7720, Val Acc: 0.0276, Precision: 0.0006, Recall: 0.0222, F1: 0.0013
+2025-02-28 13:00:06,871 INFO: Saved checkpoint: checkpoints_28feb\checkpoint_epoch_1.pth
+2025-02-28 13:00:06,947 INFO: New best model saved at: checkpoints_28feb\best_checkpoint.pth
+2025-02-28 13:03:58,180 INFO: Epoch 2/20 -- Train Loss: 3.7488, Train Acc: 0.0451
+2025-02-28 13:04:56,335 INFO: Validation Loss: 3.7303, Val Acc: 0.0414, Precision: 0.0039, Recall: 0.0252, F1: 0.0062
+2025-02-28 13:04:56,411 INFO: Saved checkpoint: checkpoints_28feb\checkpoint_epoch_2.pth
+2025-02-28 13:04:56,488 INFO: New best model saved at: checkpoints_28feb\best_checkpoint.pth
+2025-02-28 13:08:48,206 INFO: Epoch 3/20 -- Train Loss: 3.6699, Train Acc: 0.0642
+2025-02-28 13:09:49,198 INFO: Validation Loss: 3.7110, Val Acc: 0.0483, Precision: 0.0053, Recall: 0.0348, F1: 0.0091
+2025-02-28 13:09:49,274 INFO: Saved checkpoint: checkpoints_28feb\checkpoint_epoch_3.pth
+2025-02-28 13:09:49,351 INFO: New best model saved at: checkpoints_28feb\best_checkpoint.pth
+2025-02-28 13:13:56,380 INFO: Epoch 4/20 -- Train Loss: 3.6477, Train Acc: 0.0503
+2025-02-28 13:14:53,792 INFO: Validation Loss: 3.6797, Val Acc: 0.0621, Precision: 0.0067, Recall: 0.0407, F1: 0.0114
+2025-02-28 13:14:53,858 INFO: Saved checkpoint: checkpoints_28feb\checkpoint_epoch_4.pth
+2025-02-28 13:14:53,949 INFO: New best model saved at: checkpoints_28feb\best_checkpoint.pth
+2025-02-28 13:18:40,273 INFO: Epoch 5/20 -- Train Loss: 3.5964, Train Acc: 0.0608
+2025-02-28 13:19:37,113 INFO: Validation Loss: 3.7165, Val Acc: 0.0621, Precision: 0.0068, Recall: 0.0333, F1: 0.0109
+2025-02-28 13:19:37,179 INFO: Saved checkpoint: checkpoints_28feb\checkpoint_epoch_5.pth
+2025-02-28 13:23:24,937 INFO: Epoch 6/20 -- Train Loss: 3.5422, Train Acc: 0.0781
+2025-02-28 13:24:21,672 INFO: Validation Loss: 3.7391, Val Acc: 0.0483, Precision: 0.0076, Recall: 0.0330, F1: 0.0120
+2025-02-28 13:24:21,749 INFO: Saved checkpoint: checkpoints_28feb\checkpoint_epoch_6.pth
+2025-02-28 13:28:13,423 INFO: Epoch 7/20 -- Train Loss: 3.5076, Train Acc: 0.0781
+2025-02-28 13:29:10,241 INFO: Validation Loss: 3.6851, Val Acc: 0.0690, Precision: 0.0282, Recall: 0.0415, F1: 0.0312
+2025-02-28 13:29:10,312 INFO: Saved checkpoint: checkpoints_28feb\checkpoint_epoch_7.pth
+2025-02-28 13:33:02,596 INFO: Epoch 8/20 -- Train Loss: 3.4546, Train Acc: 0.1128
+2025-02-28 13:33:59,460 INFO: Validation Loss: 3.7240, Val Acc: 0.0897, Precision: 0.0165, Recall: 0.0622, F1: 0.0227
+2025-02-28 13:33:59,526 INFO: Saved checkpoint: checkpoints_28feb\checkpoint_epoch_8.pth
+2025-02-28 13:37:53,957 INFO: Epoch 9/20 -- Train Loss: 3.4048, Train Acc: 0.1024
+2025-02-28 13:38:50,971 INFO: Validation Loss: 3.7445, Val Acc: 0.0759, Precision: 0.0218, Recall: 0.0470, F1: 0.0275
+2025-02-28 13:38:51,047 INFO: Saved checkpoint: checkpoints_28feb\checkpoint_epoch_9.pth
+2025-02-28 13:44:42,734 INFO: Epoch 10/20 -- Train Loss: 3.3140, Train Acc: 0.1337
+2025-02-28 13:46:26,043 INFO: Validation Loss: 3.7451, Val Acc: 0.0966, Precision: 0.0455, Recall: 0.0607, F1: 0.0428
+2025-02-28 13:46:26,110 INFO: Saved checkpoint: checkpoints_28feb\checkpoint_epoch_10.pth
+2025-02-28 13:47:24,633 INFO: Training started.
+2025-02-28 13:47:24,710 INFO: Using device: cuda
+2025-02-28 13:47:32,175 INFO: Training started.
+2025-02-28 13:47:32,256 INFO: Using device: cuda
+2025-02-28 13:47:39,245 INFO: Training started.
+2025-02-28 13:47:39,330 INFO: Using device: cuda
+2025-02-28 13:47:39,400 INFO: Starting full training with best learning rate: 0.0001
+2025-02-28 13:47:57,870 INFO: Training started.
+2025-02-28 13:47:57,944 INFO: Using device: cuda
+2025-02-28 13:48:05,016 INFO: Training started.
+2025-02-28 13:48:05,096 INFO: Using device: cuda
+2025-02-28 13:48:12,411 INFO: Training started.
+2025-02-28 13:48:12,496 INFO: Using device: cuda
+2025-02-28 13:48:20,097 INFO: Training started.
+2025-02-28 13:48:20,181 INFO: Using device: cuda
+2025-02-28 13:48:27,416 INFO: Training started.
+2025-02-28 13:48:27,499 INFO: Using device: cuda
+2025-02-28 13:48:33,928 INFO: Training started.
+2025-02-28 13:48:34,063 INFO: Using device: cuda
+2025-02-28 13:48:34,129 INFO: Starting full training with best learning rate: 0.0001

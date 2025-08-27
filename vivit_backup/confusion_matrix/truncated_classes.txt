@@ -1,0 +1,62 @@
+//Eating-related
+eating burger
+eating cake
+eating carrots
+eating chips
+eating doughnuts
+eating hotdog
+eating ice cream
+eating spaghetti
+eating watermelon
+
+//Drinking-related
+drinking
+drinking beer
+drinking shots
+tasting beer
+tasting food
+
+//Cooking-related
+baking cookies
+barbequing
+cooking chicken
+cooking egg
+cooking on campfire
+cooking sausages
+frying vegetables
+making a cake
+making a sandwich
+making pizza
+making sushi
+making tea
+scrambling eggs
+
+//ordering food
+answering questions
+counting money
+waiting in line
+//Customer behaviors
+celebrating
+hugging
+
+//Serving-related
+bartending
+setting table
+
+//Payment-related
+counting money
+
+//Cleaning-related
+cleaning floor
+cleaning shoes
+cleaning toilet
+cleaning windows
+mopping floor
+washing dishes
+washing hands
+
+//Shopping-related
+carrying baby
+pushing cart
+picking fruit
+unloading truck

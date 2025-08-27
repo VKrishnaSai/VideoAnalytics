@@ -1,0 +1,116 @@
+===== Overall Metrics =====
+Accuracy: 0.2148
+Precision Macro: 0.1963
+Recall Macro: 0.2096
+F1 Macro: 0.1676
+Precision Micro: 0.2148
+Recall Micro: 0.2148
+F1 Micro: 0.2148
+Precision Weighted: 0.1971
+Recall Weighted: 0.2148
+F1 Weighted: 0.1705
+
+===== Per-Class Metrics =====
+Class                            Accuracy  Precision     Recall   F1-Score
+--------------------------------------------------------------------------
+ApplyEyeMakeup                     0.0167     0.1000     0.0167     0.0286
+ApplyLipstick                      0.0000     0.0000     0.0000     0.0000
+Archery                            0.1167     0.1111     0.1167     0.1138
+BabyCrawling                       0.0182     0.1111     0.0182     0.0312
+BalanceBeam                        0.1522     0.4375     0.1522     0.2258
+BandMarching                       0.2154     0.2029     0.2154     0.2090
+BaseballPitch                      0.3607     0.3284     0.3607     0.3438
+Basketball                         0.0364     0.0690     0.0364     0.0476
+BasketballDunk                     0.8571     0.4286     0.8571     0.5714
+BenchPress                         0.1343     0.2368     0.1343     0.1714
+Biking                             0.1228     0.2000     0.1228     0.1522
+Billiards                          0.9531     0.7011     0.9531     0.8079
+BlowDryHair                        0.0536     0.0833     0.0536     0.0652
+BlowingCandles                     0.1739     0.0762     0.1739     0.1060
+BodyWeightSquats                   0.0000     0.0000     0.0000     0.0000
+Bowling                            0.6094     0.2191     0.6094     0.3223
+BoxingPunchingBag                  0.0746     0.0538     0.0746     0.0625
+BoxingSpeedBag                     0.3860     0.0827     0.3860     0.1362
+BreastStroke                       0.7674     0.5323     0.7674     0.6286
+BrushingTeeth                      0.2115     0.2000     0.2115     0.2056
+CleanAndJerk                       0.1042     0.1852     0.1042     0.1333
+CliffDiving                        0.4915     0.4394     0.4915     0.4640
+CricketBowling                     0.0862     0.2381     0.0862     0.1266
+CricketShot                        0.2429     0.2152     0.2429     0.2282
+CuttingInKitchen                   0.0217     0.5000     0.0217     0.0417
+Diving                             0.7778     0.3828     0.7778     0.5131
+Drumming                           0.0735     0.1724     0.0735     0.1031
+Fencing                            0.0000     0.0000     0.0000     0.0000
+FieldHockeyPenalty                 0.5926     0.3333     0.5926     0.4267
+FloorGymnastics                    0.1296     0.4375     0.1296     0.2000
+FrisbeeCatch                       0.2593     0.3500     0.2593     0.2979
+FrontCrawl                         0.4912     0.3256     0.4912     0.3916
+GolfSwing                          0.7143     0.1639     0.7143     0.2667
+Haircut                            0.0000     0.0000     0.0000     0.0000
+Hammering                          0.2069     0.0795     0.2069     0.1148
+HammerThrow                        0.1587     0.3448     0.1587     0.2174
+HandstandPushups                   0.1852     0.1235     0.1852     0.1481
+HandstandWalking                   0.0000     0.0000     0.0000     0.0000
+HeadMassage                        0.0984     0.1277     0.0984     0.1111
+HighJump                           0.1373     0.2593     0.1373     0.1795
+HorseRace                          0.4423     0.2473     0.4423     0.3172
+HorseRiding                        0.3088     0.1909     0.3088     0.2360
+HulaHoop                           0.0755     1.0000     0.0755     0.1404
+IceDancing                         0.7692     0.1976     0.7692     0.3145
+JavelinThrow                       0.2245     0.2683     0.2245     0.2444
+JugglingBalls                      0.0000     0.0000     0.0000     0.0000
+JumpingJack                        0.2692     0.1628     0.2692     0.2029
+JumpRope                           0.1667     0.2174     0.1667     0.1887
+Kayaking                           0.0678     0.1143     0.0678     0.0851
+Knitting                           0.0000     0.0000     0.0000     0.0000
+LongJump                           0.5263     0.3158     0.5263     0.3947
+Lunges                             0.0182     0.0625     0.0182     0.0282
+MilitaryParade                     0.0000     0.0000     0.0000     0.0000
+Mixing                             0.0000     0.0000     0.0000     0.0000
+MoppingFloor                       0.0213     0.1429     0.0213     0.0370
+Nunchucks                          0.0000     0.0000     0.0000     0.0000
+ParallelBars                       0.1429     0.3333     0.1429     0.2000
+PizzaTossing                       0.0000     0.0000     0.0000     0.0000
+PlayingCello                       0.0000     0.0000     0.0000     0.0000
+PlayingDaf                         0.0159     0.3333     0.0159     0.0303
+PlayingDhol                        0.0000     0.0000     0.0000     0.0000
+PlayingFlute                       0.0303     0.1667     0.0303     0.0513
+PlayingGuitar                      0.0000     0.0000     0.0000     0.0000
+PlayingPiano                       0.4667     0.1892     0.4667     0.2692
+PlayingSitar                       0.3333     0.2857     0.3333     0.3077
+PlayingTabla                       0.0000     0.0000     0.0000     0.0000
+PlayingViolin                      0.0000     0.0000     0.0000     0.0000
+PoleVault                          0.6452     0.2581     0.6452     0.3687
+PommelHorse                        0.1731     0.1636     0.1731     0.1682
+PullUps                            0.0000     0.0000     0.0000     0.0000
+Punch                              0.3939     0.3250     0.3939     0.3562
+PushUps                            0.0000     0.0000     0.0000     0.0000
+Rafting                            0.5833     0.1600     0.5833     0.2511
+RockClimbingIndoor                 0.3621     0.1066     0.3621     0.1647
+RopeClimbing                       0.0000     0.0000     0.0000     0.0000
+Rowing                             0.2586     0.1562     0.2586     0.1948
+SalsaSpin                          0.0351     0.2000     0.0351     0.0597
+ShavingBeard                       0.4925     0.0771     0.4925     0.1333
+Shotput                            0.0984     0.1154     0.0984     0.1062
+SkateBoarding                      0.0588     0.6000     0.0588     0.1071
+Skiing                             0.4386     0.2660     0.4386     0.3311
+Skijet                             0.1429     0.6667     0.1429     0.2353
+SkyDiving                          0.3191     0.3261     0.3191     0.3226
+SoccerJuggling                     0.0000     0.0000     0.0000     0.0000
+SoccerPenalty                      0.7759     0.3750     0.7759     0.5056
+StillRings                         0.3830     0.3214     0.3830     0.3495
+SumoWrestling                      0.0000     0.0000     0.0000     0.0000
+Surfing                            0.6364     0.4070     0.6364     0.4965
+Swing                              0.1786     0.4545     0.1786     0.2564
+TableTennisShot                    0.3036     0.1012     0.3036     0.1518
+TaiChi                             0.0000     0.0000     0.0000     0.0000
+TennisSwing                        0.1690     0.5000     0.1690     0.2526
+ThrowDiscus                        0.0000     0.0000     0.0000     0.0000
+TrampolineJumping                  0.2353     0.3158     0.2353     0.2697
+Typing                             0.0333     0.1176     0.0333     0.0519
+UnevenBars                         0.4318     0.4043     0.4318     0.4176
+VolleyballSpiking                  0.0800     0.0952     0.0800     0.0870
+WalkingWithDog                     0.0000     0.0000     0.0000     0.0000
+WallPushups                        0.0000     0.0000     0.0000     0.0000
+WritingOnBoard                     0.0161     0.2000     0.0161     0.0299
+YoYo                               0.0185     0.0370     0.0185     0.0247

@@ -1,0 +1,49 @@
+2025-08-04 20:37:42,824 INFO: PoseNet VideoMAE Training started
+2025-08-04 20:37:42,828 INFO: No GPU available, using CPU
+2025-08-04 20:37:42,829 INFO: Creating checkpoints directory: posenet_videomae_checkpoints_20250804_2037
+2025-08-04 20:37:42,830 INFO: Loading video clips data (10-second clips)...
+2025-08-04 20:37:42,830 INFO: Action classes: ['stand', 'walk', 'run', 'jump', 'sit', 'squat', 'kick', 'punch', 'wave']
+2025-08-04 20:37:42,833 INFO: Found 75 video files
+2025-08-04 20:37:42,834 INFO:   stand: 11 videos
+2025-08-04 20:37:42,834 INFO:   walk: 8 videos
+2025-08-04 20:37:42,835 INFO:   run: 7 videos
+2025-08-04 20:37:42,836 INFO:   jump: 7 videos
+2025-08-04 20:37:42,836 INFO:   sit: 14 videos
+2025-08-04 20:37:42,837 INFO:   squat: 6 videos
+2025-08-04 20:37:42,837 INFO:   kick: 7 videos
+2025-08-04 20:37:42,838 INFO:   punch: 6 videos
+2025-08-04 20:37:42,838 INFO:   wave: 9 videos
+2025-08-04 20:37:42,838 INFO: Total samples: 75, Min samples per class: 6
+2025-08-04 20:37:42,838 INFO: Using standard train/val/test split with stratification.
+2025-08-04 20:37:42,845 INFO: Final split - Training: 52, Validation: 11, Test: 12
+2025-08-04 20:37:42,845 INFO: Training distribution:
+2025-08-04 20:37:42,846 INFO:   stand: 8 videos
+2025-08-04 20:37:42,846 INFO:   walk: 5 videos
+2025-08-04 20:37:42,846 INFO:   run: 5 videos
+2025-08-04 20:37:42,847 INFO:   jump: 5 videos
+2025-08-04 20:37:42,847 INFO:   sit: 10 videos
+2025-08-04 20:37:42,847 INFO:   squat: 4 videos
+2025-08-04 20:37:42,848 INFO:   kick: 5 videos
+2025-08-04 20:37:42,848 INFO:   punch: 4 videos
+2025-08-04 20:37:42,848 INFO:   wave: 6 videos
+2025-08-04 20:37:42,849 INFO: Validation distribution:
+2025-08-04 20:37:42,849 INFO:   stand: 1 videos
+2025-08-04 20:37:42,850 INFO:   walk: 2 videos
+2025-08-04 20:37:42,850 INFO:   run: 1 videos
+2025-08-04 20:37:42,850 INFO:   jump: 1 videos
+2025-08-04 20:37:42,850 INFO:   sit: 2 videos
+2025-08-04 20:37:42,851 INFO:   squat: 1 videos
+2025-08-04 20:37:42,851 INFO:   kick: 1 videos
+2025-08-04 20:37:42,851 INFO:   punch: 1 videos
+2025-08-04 20:37:42,852 INFO:   wave: 1 videos
+2025-08-04 20:37:42,852 INFO: Test distribution:
+2025-08-04 20:37:42,853 INFO:   stand: 2 videos
+2025-08-04 20:37:42,853 INFO:   walk: 1 videos
+2025-08-04 20:37:42,853 INFO:   run: 1 videos
+2025-08-04 20:37:42,854 INFO:   jump: 1 videos
+2025-08-04 20:37:42,854 INFO:   sit: 2 videos
+2025-08-04 20:37:42,854 INFO:   squat: 1 videos
+2025-08-04 20:37:42,854 INFO:   kick: 1 videos
+2025-08-04 20:37:42,855 INFO:   punch: 1 videos
+2025-08-04 20:37:42,855 INFO:   wave: 2 videos
+2025-08-04 20:37:42,856 INFO: Initializing VideoMAE model and processor...

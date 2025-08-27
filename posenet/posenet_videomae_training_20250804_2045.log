@@ -1,0 +1,60 @@
+2025-08-04 20:45:37,277 INFO: PoseNet VideoMAE Training started
+2025-08-04 20:45:37,280 INFO: No GPU available, using CPU
+2025-08-04 20:45:37,281 INFO: Creating checkpoints directory: posenet_videomae_checkpoints_20250804_2045
+2025-08-04 20:45:37,285 INFO: Loading video clips data (10-second clips)...
+2025-08-04 20:45:37,285 INFO: Found data directory: ./output/video_clips
+2025-08-04 20:45:37,287 INFO: Action classes: ['stand', 'walk', 'run', 'jump', 'sit', 'squat', 'kick', 'punch', 'wave']
+2025-08-04 20:45:37,298 INFO: Found 75 video files
+2025-08-04 20:45:37,299 INFO:   stand: 11 videos
+2025-08-04 20:45:37,301 INFO:   walk: 8 videos
+2025-08-04 20:45:37,302 INFO:   run: 7 videos
+2025-08-04 20:45:37,302 INFO:   jump: 7 videos
+2025-08-04 20:45:37,303 INFO:   sit: 14 videos
+2025-08-04 20:45:37,303 INFO:   squat: 6 videos
+2025-08-04 20:45:37,304 INFO:   kick: 7 videos
+2025-08-04 20:45:37,304 INFO:   punch: 6 videos
+2025-08-04 20:45:37,305 INFO:   wave: 9 videos
+2025-08-04 20:45:37,305 INFO: Total samples: 75, Min samples per class: 6
+2025-08-04 20:45:37,306 INFO: Using standard train/val/test split with stratification.
+2025-08-04 20:45:37,329 INFO: Final split - Training: 52, Validation: 11, Test: 12
+2025-08-04 20:45:37,330 INFO: Training distribution:
+2025-08-04 20:45:37,331 INFO:   stand: 8 videos
+2025-08-04 20:45:37,332 INFO:   walk: 5 videos
+2025-08-04 20:45:37,333 INFO:   run: 5 videos
+2025-08-04 20:45:37,333 INFO:   jump: 5 videos
+2025-08-04 20:45:37,334 INFO:   sit: 10 videos
+2025-08-04 20:45:37,334 INFO:   squat: 4 videos
+2025-08-04 20:45:37,334 INFO:   kick: 5 videos
+2025-08-04 20:45:37,335 INFO:   punch: 4 videos
+2025-08-04 20:45:37,335 INFO:   wave: 6 videos
+2025-08-04 20:45:37,335 INFO: Validation distribution:
+2025-08-04 20:45:37,335 INFO:   stand: 1 videos
+2025-08-04 20:45:37,336 INFO:   walk: 2 videos
+2025-08-04 20:45:37,336 INFO:   run: 1 videos
+2025-08-04 20:45:37,336 INFO:   jump: 1 videos
+2025-08-04 20:45:37,337 INFO:   sit: 2 videos
+2025-08-04 20:45:37,337 INFO:   squat: 1 videos
+2025-08-04 20:45:37,338 INFO:   kick: 1 videos
+2025-08-04 20:45:37,338 INFO:   punch: 1 videos
+2025-08-04 20:45:37,339 INFO:   wave: 1 videos
+2025-08-04 20:45:37,339 INFO: Test distribution:
+2025-08-04 20:45:37,340 INFO:   stand: 2 videos
+2025-08-04 20:45:37,340 INFO:   walk: 1 videos
+2025-08-04 20:45:37,340 INFO:   run: 1 videos
+2025-08-04 20:45:37,341 INFO:   jump: 1 videos
+2025-08-04 20:45:37,341 INFO:   sit: 2 videos
+2025-08-04 20:45:37,341 INFO:   squat: 1 videos
+2025-08-04 20:45:37,342 INFO:   kick: 1 videos
+2025-08-04 20:45:37,342 INFO:   punch: 1 videos
+2025-08-04 20:45:37,342 INFO:   wave: 2 videos
+2025-08-04 20:45:37,342 INFO: Initializing VideoMAE model and processor...
+2025-08-04 20:45:37,343 INFO: Attempting to load VideoMAE model...
+2025-08-04 20:46:15,158 INFO: VideoMAE model loaded successfully!
+2025-08-04 20:46:15,158 INFO: Creating datasets...
+2025-08-04 20:46:15,158 INFO: Training samples: 52
+2025-08-04 20:46:15,158 INFO: Validation samples: 11
+2025-08-04 20:46:15,159 INFO: Test samples: 12
+2025-08-04 20:46:15,159 INFO: Preparing model for training...
+2025-08-04 20:46:15,163 INFO: No checkpoint found, starting training from scratch.
+2025-08-04 20:46:15,163 INFO: Starting VideoMAE training on video clips...
+2025-08-04 20:46:15,163 INFO: Training for 100 epochs with patience 10

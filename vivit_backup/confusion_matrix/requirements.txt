@@ -1,0 +1,17 @@
+# Machine Learning Libraries
+einops
+numpy
+
+# Image Processing
+opencv-python
+
+# Data Science and Metrics
+matplotlib
+seaborn
+scikit-learn
+tqdm
+
+# Web Framework and APIs
+fastapi
+uvicorn
+websockets

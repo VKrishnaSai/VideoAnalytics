@@ -1,0 +1,24 @@
+Per-Class Metrics (binary one-vs-rest):
+stand: Accuracy: 0.9862, Precision: 0.9475, Recall: 0.9644, F1: 0.9558
+walk: Accuracy: 0.9838, Precision: 0.9430, Recall: 0.9093, F1: 0.9259
+run: Accuracy: 0.9890, Precision: 0.9414, Recall: 0.9414, F1: 0.9414
+jump: Accuracy: 0.9927, Precision: 0.9610, Recall: 0.9668, F1: 0.9639
+sit: Accuracy: 0.9921, Precision: 0.9747, Recall: 0.9782, F1: 0.9764
+squat: Accuracy: 0.9921, Precision: 0.9547, Recall: 0.9547, F1: 0.9547
+kick: Accuracy: 0.9792, Precision: 0.9115, Recall: 0.8715, F1: 0.8910
+punch: Accuracy: 0.9930, Precision: 0.9424, Recall: 0.9622, F1: 0.9522
+wave: Accuracy: 0.9869, Precision: 0.9312, Recall: 0.9539, F1: 0.9424
+
+Overall Metrics:
+Accuracy: 0.9474
+Micro-Averaged:
+  Precision: 0.9474
+  Recall: 0.9474
+  F1 Score: 0.9474
+Macro-Averaged:
+  Precision: 0.9453
+  Recall: 0.9447
+  F1 Score: 0.9449
+Weighted-Averaged:
+  Precision: 0.9473
+  Recall: 0.9474166921430756

@@ -1,0 +1,24 @@
+===== Overall Metrics =====
+Accuracy: 0.4545
+Precision Macro: 0.3889
+Recall Macro: 0.4444
+F1 Macro: 0.4074
+Precision Micro: 0.4545
+Recall Micro: 0.4545
+F1 Micro: 0.4545
+Precision Weighted: 0.4091
+Recall Weighted: 0.4545
+F1 Weighted: 0.4242
+
+===== Per-Class Metrics =====
+Class                            Accuracy  Precision     Recall   F1-Score
+--------------------------------------------------------------------------
+stand                              0.0000     0.0000     0.0000     0.0000
+walk                               0.0000     0.0000     0.0000     0.0000
+run                                0.0000     0.0000     0.0000     0.0000
+jump                               0.0000     0.0000     0.0000     0.0000
+sit                                1.0000     1.0000     1.0000     1.0000
+squat                              1.0000     1.0000     1.0000     1.0000
+kick                               0.0000     0.0000     0.0000     0.0000
+punch                              1.0000     0.5000     1.0000     0.6667
+wave                               1.0000     1.0000     1.0000     1.0000

@@ -1,0 +1,135 @@
+{
+    "stand": {
+        "correct": 548,
+        "incorrect": 106,
+        "no_prediction": 16,
+        "total": 670,
+        "misclassified": {
+            "": 18,
+            "walk": 78,
+            "jump": 10
+        },
+        "precision": 0.569055036344756,
+        "recall": 0.8616352201257862,
+        "f1_score": 0.6854283927454659
+    },
+    "walk": {
+        "correct": 795,
+        "incorrect": 47,
+        "no_prediction": 16,
+        "total": 858,
+        "misclassified": {
+            "": 16,
+            "stand": 30,
+            "run": 1
+        },
+        "precision": 0.7688588007736944,
+        "recall": 0.9624697336561744,
+        "f1_score": 0.8548387096774195
+    },
+    "run": {
+        "correct": 339,
+        "incorrect": 73,
+        "no_prediction": 20,
+        "total": 432,
+        "misclassified": {
+            "": 22,
+            "walk": 23,
+            "stand": 27,
+            "kick": 1
+        },
+        "precision": 0.9912280701754386,
+        "recall": 0.8692307692307693,
+        "f1_score": 0.9262295081967212
+    },
+    "jump": {
+        "correct": 275,
+        "incorrect": 295,
+        "no_prediction": 10,
+        "total": 580,
+        "misclassified": {
+            "": 53,
+            "wave": 9,
+            "stand": 186,
+            "walk": 41,
+            "punch": 6
+        },
+        "precision": 0.9515570934256056,
+        "recall": 0.5319148936170213,
+        "f1_score": 0.6823821339950372
+    },
+    "sit": {
+        "correct": 286,
+        "incorrect": 97,
+        "no_prediction": 21,
+        "total": 404,
+        "misclassified": {
+            "": 16,
+            "walk": 25,
+            "stand": 50,
+            "kick": 1,
+            "squat": 1,
+            "jump": 4
+        },
+        "precision": 1.0,
+        "recall": 0.779291553133515,
+        "f1_score": 0.8759571209800918
+    },
+    "squat": {
+        "correct": 0,
+        "incorrect": 0,
+        "no_prediction": 0,
+        "total": 0,
+        "misclassified": {},
+        "precision": 0.0,
+        "recall": 0,
+        "f1_score": 0
+    },
+    "kick": {
+        "correct": 129,
+        "incorrect": 91,
+        "no_prediction": 17,
+        "total": 237,
+        "misclassified": {
+            "": 21,
+            "wave": 4,
+            "walk": 25,
+            "stand": 39,
+            "run": 2
+        },
+        "precision": 0.9555555555555556,
+        "recall": 0.6482412060301508,
+        "f1_score": 0.7724550898203593
+    },
+    "punch": {
+        "correct": 797,
+        "incorrect": 93,
+        "no_prediction": 12,
+        "total": 902,
+        "misclassified": {
+            "": 14,
+            "walk": 28,
+            "stand": 45,
+            "wave": 3,
+            "kick": 3
+        },
+        "precision": 0.9925280199252802,
+        "recall": 0.9098173515981736,
+        "f1_score": 0.9493746277546159
+    },
+    "wave": {
+        "correct": 308,
+        "incorrect": 71,
+        "no_prediction": 27,
+        "total": 406,
+        "misclassified": {
+            "": 13,
+            "walk": 19,
+            "stand": 38,
+            "kick": 1
+        },
+        "precision": 0.9506172839506173,
+        "recall": 0.8415300546448088,
+        "f1_score": 0.8927536231884058
+    }
+}

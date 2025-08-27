@@ -1,0 +1,14 @@
+2025-08-08 00:03:19,706 INFO: Kinetics ResNet+LSTM Training started
+2025-08-08 00:03:19,732 INFO: Using device: cuda
+2025-08-08 00:03:19,827 INFO: GPU 0: NVIDIA RTX A6000
+2025-08-08 00:03:19,827 INFO: GPU 0 Memory: 47.5 GB
+2025-08-08 00:03:19,827 INFO: GPU 1: NVIDIA RTX A6000
+2025-08-08 00:03:19,827 INFO: GPU 1 Memory: 47.5 GB
+2025-08-08 00:03:19,839 INFO: CUDA functionality test passed
+2025-08-08 00:03:19,842 INFO: Loading video data...
+2025-08-08 00:03:19,842 INFO: Found 0 classes: []... (showing first 5)
+2025-08-08 00:03:19,842 INFO: Loaded 0 training videos.
+2025-08-08 00:03:19,842 INFO: Loaded 0 test videos from val directory.
+2025-08-08 00:03:19,842 ERROR: No training videos found!
+2025-08-08 00:03:19,842 INFO: Final split - Training: 0, Validation: 0, Test: 0
+2025-08-08 00:03:19,842 INFO: Number of classes: 0

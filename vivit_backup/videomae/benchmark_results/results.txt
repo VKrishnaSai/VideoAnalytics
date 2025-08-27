@@ -1,0 +1,8 @@
+testlist01 - Top-1 Accuracy: 0.00% | Top-5 Accuracy: 0.00%
+testlist02 - Top-1 Accuracy: 0.00% | Top-5 Accuracy: 0.00%
+testlist01 - Top-1 Accuracy: 77.64% | Top-5 Accuracy: 92.73%
+testlist02 - Top-1 Accuracy: 99.76% | Top-5 Accuracy: 99.97%
+combined_test - Top-1 Accuracy: 88.63% | Top-5 Accuracy: 96.33%
+testlist01 - Top-1 Accuracy: 77.64% | Top-5 Accuracy: 92.73%
+testlist02 - Top-1 Accuracy: 99.73% | Top-5 Accuracy: 99.95%
+testlist03 - Top-1 Accuracy: 99.73% | Top-5 Accuracy: 100.00%

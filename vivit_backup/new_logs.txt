@@ -1,0 +1,85 @@
+2025-02-28 12:59:10,755 INFO: Epoch 1/20 -- Train Loss: 3.8749, Train Acc: 0.0312
+2025-02-28 13:00:06,794 INFO: Validation Loss: 3.7720, Val Acc: 0.0276, Precision: 0.0006, Recall: 0.0222, F1: 0.0013
+2025-02-28 13:00:06,871 INFO: Saved checkpoint: checkpoints_28feb\checkpoint_epoch_1.pth
+2025-02-28 13:00:06,947 INFO: New best model saved at: checkpoints_28feb\best_checkpoint.pth
+2025-02-28 13:03:58,180 INFO: Epoch 2/20 -- Train Loss: 3.7488, Train Acc: 0.0451
+2025-02-28 13:04:56,335 INFO: Validation Loss: 3.7303, Val Acc: 0.0414, Precision: 0.0039, Recall: 0.0252, F1: 0.0062
+2025-02-28 13:04:56,411 INFO: Saved checkpoint: checkpoints_28feb\checkpoint_epoch_2.pth
+2025-02-28 13:04:56,488 INFO: New best model saved at: checkpoints_28feb\best_checkpoint.pth
+2025-02-28 13:08:48,206 INFO: Epoch 3/20 -- Train Loss: 3.6699, Train Acc: 0.0642
+2025-02-28 13:09:49,198 INFO: Validation Loss: 3.7110, Val Acc: 0.0483, Precision: 0.0053, Recall: 0.0348, F1: 0.0091
+2025-02-28 13:09:49,274 INFO: Saved checkpoint: checkpoints_28feb\checkpoint_epoch_3.pth
+2025-02-28 13:09:49,351 INFO: New best model saved at: checkpoints_28feb\best_checkpoint.pth
+2025-02-28 13:13:56,380 INFO: Epoch 4/20 -- Train Loss: 3.6477, Train Acc: 0.0503
+2025-02-28 13:14:53,792 INFO: Validation Loss: 3.6797, Val Acc: 0.0621, Precision: 0.0067, Recall: 0.0407, F1: 0.0114
+2025-02-28 13:14:53,858 INFO: Saved checkpoint: checkpoints_28feb\checkpoint_epoch_4.pth
+2025-02-28 13:58:36,950 INFO: Epoch 5 -- Train Loss: 3.6023, Train Acc: 0.0573
+2025-02-28 14:00:26,467 INFO: Validation Loss: 3.7383, Val Acc: 0.0690, Precision: 0.0109, Recall: 0.0433, F1: 0.0168
+2025-02-28 14:00:26,606 INFO: Saved checkpoint: checkpoints_28feb\resume_checkpoint_epoch_5.pth
+2025-02-28 14:00:26,780 INFO: New best model saved at: checkpoints_28feb\resume_best_checkpoint.pth
+2025-02-28 14:07:11,144 INFO: Epoch 6 -- Train Loss: 3.5602, Train Acc: 0.0781
+2025-02-28 14:08:58,813 INFO: Validation Loss: 3.7277, Val Acc: 0.0690, Precision: 0.0130, Recall: 0.0360, F1: 0.0143
+2025-02-28 14:08:58,999 INFO: Saved checkpoint: checkpoints_28feb\resume_checkpoint_epoch_6.pth
+2025-02-28 14:08:59,203 INFO: New best model saved at: checkpoints_28feb\resume_best_checkpoint.pth
+2025-02-28 14:16:15,065 INFO: Epoch 7 -- Train Loss: 3.5197, Train Acc: 0.0677
+2025-02-28 14:17:47,948 INFO: Validation Loss: 3.7650, Val Acc: 0.0621, Precision: 0.0150, Recall: 0.0389, F1: 0.0169
+2025-02-28 14:17:48,119 INFO: Saved checkpoint: checkpoints_28feb\resume_checkpoint_epoch_7.pth
+2025-02-28 14:24:43,258 INFO: Epoch 8 -- Train Loss: 3.4663, Train Acc: 0.0990
+2025-02-28 14:26:36,516 INFO: Validation Loss: 3.7238, Val Acc: 0.0621, Precision: 0.0270, Recall: 0.0367, F1: 0.0248
+2025-02-28 14:26:36,697 INFO: Saved checkpoint: checkpoints_28feb\resume_checkpoint_epoch_8.pth
+2025-02-28 14:26:36,856 INFO: New best model saved at: checkpoints_28feb\resume_best_checkpoint.pth
+2025-02-28 14:34:09,939 INFO: Epoch 9 -- Train Loss: 3.3949, Train Acc: 0.1111
+2025-02-28 14:36:09,537 INFO: Validation Loss: 3.7685, Val Acc: 0.0897, Precision: 0.0243, Recall: 0.0547, F1: 0.0327
+2025-02-28 14:36:09,707 INFO: Saved checkpoint: checkpoints_28feb\resume_checkpoint_epoch_9.pth
+2025-02-28 14:43:26,650 INFO: Epoch 10 -- Train Loss: 3.3047, Train Acc: 0.1406
+2025-02-28 14:45:25,651 INFO: Validation Loss: 3.7638, Val Acc: 0.0759, Precision: 0.0285, Recall: 0.0489, F1: 0.0328
+2025-02-28 14:45:25,836 INFO: Saved checkpoint: checkpoints_28feb\resume_checkpoint_epoch_10.pth
+2025-02-28 14:52:31,743 INFO: Epoch 11 -- Train Loss: 3.2204, Train Acc: 0.1476
+2025-02-28 14:54:14,194 INFO: Validation Loss: 3.8609, Val Acc: 0.0897, Precision: 0.0252, Recall: 0.0689, F1: 0.0352
+2025-02-28 14:54:14,361 INFO: Saved checkpoint: checkpoints_28feb\resume_checkpoint_epoch_11.pth
+2025-02-28 15:01:08,918 INFO: Epoch 12 -- Train Loss: 3.1194, Train Acc: 0.1858
+2025-02-28 15:02:54,184 INFO: Validation Loss: 3.8554, Val Acc: 0.1034, Precision: 0.0304, Recall: 0.0676, F1: 0.0409
+2025-02-28 15:02:54,371 INFO: Saved checkpoint: checkpoints_28feb\resume_checkpoint_epoch_12.pth
+2025-02-28 15:08:53,367 INFO: Epoch 13 -- Train Loss: 2.9834, Train Acc: 0.1944
+2025-02-28 15:10:11,888 INFO: Validation Loss: 3.9846, Val Acc: 0.0690, Precision: 0.0279, Recall: 0.0459, F1: 0.0328
+2025-02-28 15:10:12,048 INFO: Saved checkpoint: checkpoints_28feb\resume_checkpoint_epoch_13.pth
+2025-02-28 15:14:24,438 INFO: Epoch 14 -- Train Loss: 2.8507, Train Acc: 0.2309
+2025-02-28 15:15:23,326 INFO: Validation Loss: 3.8957, Val Acc: 0.1034, Precision: 0.0345, Recall: 0.0785, F1: 0.0462
+2025-02-28 15:15:23,402 INFO: Saved checkpoint: checkpoints_28feb\resume_checkpoint_epoch_14.pth
+2025-02-28 15:21:24,553 INFO: Epoch 15 -- Train Loss: 2.7150, Train Acc: 0.2604
+2025-02-28 15:23:04,959 INFO: Validation Loss: 3.9842, Val Acc: 0.0621, Precision: 0.0262, Recall: 0.0433, F1: 0.0306
+2025-02-28 15:23:05,121 INFO: Saved checkpoint: checkpoints_28feb\resume_checkpoint_epoch_15.pth
+2025-02-28 15:29:30,553 INFO: Epoch 16 -- Train Loss: 2.4924, Train Acc: 0.3385
+2025-02-28 15:31:12,698 INFO: Validation Loss: 3.9801, Val Acc: 0.0759, Precision: 0.0434, Recall: 0.0478, F1: 0.0422
+2025-02-28 15:52:44,529 INFO: Epoch 17 -- Train Loss: 2.3426, Train Acc: 0.3854
+2025-02-28 15:54:22,823 INFO: Validation Loss: 4.0153, Val Acc: 0.0828, Precision: 0.0327, Recall: 0.0596, F1: 0.0379
+2025-02-28 15:54:23,001 INFO: Saved checkpoint: checkpoints_28feb\resume_checkpoint_epoch_17.pth
+2025-02-28 15:54:23,163 INFO: New best model saved at: checkpoints_28feb\resume_best_checkpoint.pth
+2025-02-28 16:00:54,150 INFO: Epoch 18 -- Train Loss: 2.0807, Train Acc: 0.4878
+2025-02-28 16:02:25,565 INFO: Validation Loss: 4.1099, Val Acc: 0.0759, Precision: 0.0330, Recall: 0.0544, F1: 0.0400
+2025-02-28 16:02:25,732 INFO: Saved checkpoint: checkpoints_28feb\resume_checkpoint_epoch_18.pth
+2025-02-28 16:08:37,615 INFO: Epoch 19 -- Train Loss: 1.8798, Train Acc: 0.5122
+2025-02-28 16:10:19,576 INFO: Validation Loss: 4.2482, Val Acc: 0.0621, Precision: 0.0324, Recall: 0.0407, F1: 0.0309
+2025-02-28 16:10:19,743 INFO: Saved checkpoint: checkpoints_28feb\resume_checkpoint_epoch_19.pth
+2025-02-28 16:16:25,175 INFO: Epoch 20 -- Train Loss: 1.6454, Train Acc: 0.5868
+2025-02-28 16:17:16,587 INFO: Validation Loss: 4.3408, Val Acc: 0.0483, Precision: 0.0119, Recall: 0.0311, F1: 0.0169
+2025-02-28 16:17:16,652 INFO: Saved checkpoint: checkpoints_28feb\resume_checkpoint_epoch_20.pth
+2025-02-28 16:17:21,856 INFO: Training metrics plots saved.
+2025-02-28 16:24:06,460 INFO: Resuming training from epoch 20
+2025-02-28 16:27:40,879 INFO: Epoch 21 -- Train Loss: 1.4450, Train Acc: 0.6649
+2025-02-28 16:28:31,481 INFO: Validation Loss: 4.4689, Val Acc: 0.0552, Precision: 0.0280, Recall: 0.0385, F1: 0.0305
+2025-02-28 16:28:31,556 INFO: Saved checkpoint: checkpoints_28feb\resume_checkpoint_epoch_21.pth
+2025-02-28 16:28:31,630 INFO: New best model saved at: checkpoints_28feb\resume_best_checkpoint.pth
+2025-02-28 16:31:50,175 INFO: Epoch 22 -- Train Loss: 1.1898, Train Acc: 0.7274
+2025-02-28 16:32:39,907 INFO: Validation Loss: 4.4294, Val Acc: 0.0690, Precision: 0.0397, Recall: 0.0491, F1: 0.0422
+2025-02-28 16:32:39,989 INFO: Saved checkpoint: checkpoints_28feb\resume_checkpoint_epoch_22.pth
+2025-02-28 16:32:40,072 INFO: New best model saved at: checkpoints_28feb\resume_best_checkpoint.pth
+2025-02-28 16:36:00,308 INFO: Epoch 23 -- Train Loss: 1.0451, Train Acc: 0.7743
+2025-02-28 16:36:50,091 INFO: Validation Loss: 4.5447, Val Acc: 0.0552, Precision: 0.0334, Recall: 0.0415, F1: 0.0352
+2025-02-28 16:36:50,162 INFO: Saved checkpoint: checkpoints_28feb\resume_checkpoint_epoch_23.pth
+2025-02-28 16:40:12,569 INFO: Epoch 24 -- Train Loss: 0.7999, Train Acc: 0.8177
+2025-02-28 16:41:02,120 INFO: Validation Loss: 4.6491, Val Acc: 0.0759, Precision: 0.0410, Recall: 0.0552, F1: 0.0445
+2025-02-28 16:41:02,201 INFO: Saved checkpoint: checkpoints_28feb\resume_checkpoint_epoch_24.pth
+2025-02-28 16:44:21,516 INFO: Epoch 25 -- Train Loss: 0.6965, Train Acc: 0.8611
+2025-02-28 16:45:34,778 INFO: Validation Loss: 4.7253, Val Acc: 0.0828, Precision: 0.0620, Recall: 0.0656, F1: 0.0586
+2025-02-28 16:45:34,943 INFO: Saved checkpoint: checkpoints_28feb\resume_checkpoint_epoch_25.pth

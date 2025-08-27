@@ -1,0 +1,34 @@
+2025-02-25 09:49:34,297 INFO: Resumed training started.
+2025-02-25 09:49:34,571 INFO: Using device: cuda
+2025-02-25 09:49:34,984 INFO: Resuming training from epoch 10
+2025-02-25 10:00:51,491 INFO: Epoch 11 -- Loss: 3.1955, Accuracy: 0.1562, Precision: 0.1015, Recall: 0.1114, F1: 0.0871
+2025-02-25 10:00:51,584 INFO: Saved checkpoint: checkpoints\resume_checkpoint_epoch_11.pth
+2025-02-25 10:00:51,674 INFO: New best model saved at: checkpoints\resume_best_checkpoint.pth
+2025-02-25 10:17:13,967 INFO: Epoch 12 -- Loss: 3.0978, Accuracy: 0.1745, Precision: 0.1659, Recall: 0.1265, F1: 0.1115
+2025-02-25 10:17:14,204 INFO: Saved checkpoint: checkpoints\resume_checkpoint_epoch_12.pth
+2025-02-25 10:17:14,398 INFO: New best model saved at: checkpoints\resume_best_checkpoint.pth
+2025-02-25 10:34:51,125 INFO: Epoch 13 -- Loss: 2.9667, Accuracy: 0.2218, Precision: 0.1694, Recall: 0.1660, F1: 0.1480
+2025-02-25 10:34:51,309 INFO: Saved checkpoint: checkpoints\resume_checkpoint_epoch_13.pth
+2025-02-25 10:34:51,502 INFO: New best model saved at: checkpoints\resume_best_checkpoint.pth
+2025-02-25 10:52:53,585 INFO: Epoch 14 -- Loss: 2.8126, Accuracy: 0.2662, Precision: 0.2656, Recall: 0.2127, F1: 0.2060
+2025-02-25 10:52:53,819 INFO: Saved checkpoint: checkpoints\resume_checkpoint_epoch_14.pth
+2025-02-25 10:52:54,044 INFO: New best model saved at: checkpoints\resume_best_checkpoint.pth
+2025-02-25 11:11:02,172 INFO: Epoch 15 -- Loss: 2.6652, Accuracy: 0.3095, Precision: 0.3518, Recall: 0.2519, F1: 0.2506
+2025-02-25 11:11:02,397 INFO: Saved checkpoint: checkpoints\resume_checkpoint_epoch_15.pth
+2025-02-25 11:11:02,681 INFO: New best model saved at: checkpoints\resume_best_checkpoint.pth
+2025-02-25 11:21:50,988 INFO: Epoch 16 -- Loss: 2.4908, Accuracy: 0.3317, Precision: 0.4041, Recall: 0.2768, F1: 0.2897
+2025-02-25 11:21:51,141 INFO: Saved checkpoint: checkpoints\resume_checkpoint_epoch_16.pth
+2025-02-25 11:21:51,308 INFO: New best model saved at: checkpoints\resume_best_checkpoint.pth
+2025-02-25 11:32:47,737 INFO: Epoch 17 -- Loss: 2.2558, Accuracy: 0.4156, Precision: 0.4789, Recall: 0.3650, F1: 0.3782
+2025-02-25 11:32:47,939 INFO: Saved checkpoint: checkpoints\resume_checkpoint_epoch_17.pth
+2025-02-25 11:32:48,144 INFO: New best model saved at: checkpoints\resume_best_checkpoint.pth
+2025-02-25 11:45:35,723 INFO: Epoch 18 -- Loss: 2.0054, Accuracy: 0.4860, Precision: 0.5738, Recall: 0.4456, F1: 0.4691
+2025-02-25 11:45:35,888 INFO: Saved checkpoint: checkpoints\resume_checkpoint_epoch_18.pth
+2025-02-25 11:45:36,085 INFO: New best model saved at: checkpoints\resume_best_checkpoint.pth
+2025-02-25 11:56:55,647 INFO: Epoch 19 -- Loss: 1.8286, Accuracy: 0.5410, Precision: 0.6183, Recall: 0.5101, F1: 0.5338
+2025-02-25 11:56:55,735 INFO: Saved checkpoint: checkpoints\resume_checkpoint_epoch_19.pth
+2025-02-25 11:56:55,819 INFO: New best model saved at: checkpoints\resume_best_checkpoint.pth
+2025-02-25 12:04:45,237 INFO: Epoch 20 -- Loss: 1.5647, Accuracy: 0.6085, Precision: 0.6602, Recall: 0.5861, F1: 0.6036
+2025-02-25 12:04:45,324 INFO: Saved checkpoint: checkpoints\resume_checkpoint_epoch_20.pth
+2025-02-25 12:04:45,407 INFO: New best model saved at: checkpoints\resume_best_checkpoint.pth
+2025-02-25 12:04:45,449 INFO: Final resumed model saved as vivit_model_resume.pth

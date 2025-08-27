@@ -1,0 +1,41 @@
+# Requirements for Kinetics4005per PoseNet Training
+# Install with: pip install -r requirements_kinetics_posenet.txt
+
+# Core dependencies
+opencv-python>=4.5.0
+numpy>=1.21.0
+PyYAML>=6.0
+tqdm>=4.60.0
+
+# Machine learning
+scikit-learn>=1.0.0
+
+# Visualization
+matplotlib>=3.5.0
+seaborn>=0.11.0
+
+# Data processing
+simplejson>=3.17.0
+
+# OpenPose dependencies (if using custom build)
+# Note: OpenPose installation varies by system
+# See: https://github.com/CMU-Perceptual-Computing-Lab/openpose
+
+# Alternative: MediaPipe for pose detection
+# mediapipe>=0.8.0
+
+# Optional: For better performance
+# pillow>=8.0.0
+
+# Optional: For data analysis
+# pandas>=1.3.0
+
+# System dependencies (install separately):
+# - OpenCV with CUDA support (optional but recommended)
+# - CUDA toolkit (if using GPU acceleration)
+# - cuDNN (if using GPU acceleration)
+
+# Installation notes:
+# 1. Install OpenPose following official instructions
+# 2. Ensure Python bindings are available
+# 3. Test with: python -c "import cv2; print(cv2.__version__)"

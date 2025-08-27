@@ -1,0 +1,6 @@
+2025-08-04 20:35:57,255 INFO: PoseNet VideoMAE Training started
+2025-08-04 20:35:57,259 INFO: No GPU available, using CPU
+2025-08-04 20:35:57,260 INFO: Creating checkpoints directory: posenet_videomae_checkpoints_20250804_2035
+2025-08-04 20:35:57,262 INFO: Loading video clips data (10-second clips)...
+2025-08-04 20:35:57,263 INFO: Action classes: ['stand', 'walk', 'run', 'jump', 'sit', 'squat', 'kick', 'punch', 'wave']
+2025-08-04 20:35:57,264 ERROR: Data directory does not exist: ../output/video_clips

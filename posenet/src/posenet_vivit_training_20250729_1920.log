@@ -1,0 +1,157 @@
+2025-07-29 19:20:02,623 INFO: PoseNet ViViT Training started
+2025-07-29 19:20:02,627 INFO: No GPU available, using CPU
+2025-07-29 19:20:02,635 INFO: Creating checkpoints directory: posenet_checkpoints_20250729_1920
+2025-07-29 19:20:02,639 INFO: Loading video clips data (10-second clips)...
+2025-07-29 19:20:02,645 INFO: Action classes: ['stand', 'walk', 'run', 'jump', 'sit', 'squat', 'kick', 'punch', 'wave']
+2025-07-29 19:20:02,659 INFO: Found 75 video files
+2025-07-29 19:20:02,662 INFO:   stand: 11 videos
+2025-07-29 19:20:02,664 INFO:   walk: 8 videos
+2025-07-29 19:20:02,666 INFO:   run: 7 videos
+2025-07-29 19:20:02,667 INFO:   jump: 7 videos
+2025-07-29 19:20:02,667 INFO:   sit: 14 videos
+2025-07-29 19:20:02,668 INFO:   squat: 6 videos
+2025-07-29 19:20:02,669 INFO:   kick: 7 videos
+2025-07-29 19:20:02,669 INFO:   punch: 6 videos
+2025-07-29 19:20:02,671 INFO:   wave: 9 videos
+2025-07-29 19:20:02,674 INFO: Total samples: 75, Min samples per class: 6
+2025-07-29 19:20:02,675 INFO: Using standard train/val/test split with stratification.
+2025-07-29 19:20:02,692 INFO: Final split - Training: 52, Validation: 11, Test: 12
+2025-07-29 19:20:02,693 INFO: Training distribution:
+2025-07-29 19:20:02,694 INFO:   stand: 8 videos
+2025-07-29 19:20:02,694 INFO:   walk: 5 videos
+2025-07-29 19:20:02,694 INFO:   run: 5 videos
+2025-07-29 19:20:02,695 INFO:   jump: 5 videos
+2025-07-29 19:20:02,695 INFO:   sit: 10 videos
+2025-07-29 19:20:02,696 INFO:   squat: 4 videos
+2025-07-29 19:20:02,699 INFO:   kick: 5 videos
+2025-07-29 19:20:02,700 INFO:   punch: 4 videos
+2025-07-29 19:20:02,701 INFO:   wave: 6 videos
+2025-07-29 19:20:02,702 INFO: Validation distribution:
+2025-07-29 19:20:02,703 INFO:   stand: 1 videos
+2025-07-29 19:20:02,706 INFO:   walk: 2 videos
+2025-07-29 19:20:02,707 INFO:   run: 1 videos
+2025-07-29 19:20:02,708 INFO:   jump: 1 videos
+2025-07-29 19:20:02,708 INFO:   sit: 2 videos
+2025-07-29 19:20:02,709 INFO:   squat: 1 videos
+2025-07-29 19:20:02,712 INFO:   kick: 1 videos
+2025-07-29 19:20:02,712 INFO:   punch: 1 videos
+2025-07-29 19:20:02,714 INFO:   wave: 1 videos
+2025-07-29 19:20:02,714 INFO: Test distribution:
+2025-07-29 19:20:02,715 INFO:   stand: 2 videos
+2025-07-29 19:20:02,715 INFO:   walk: 1 videos
+2025-07-29 19:20:02,715 INFO:   run: 1 videos
+2025-07-29 19:20:02,716 INFO:   jump: 1 videos
+2025-07-29 19:20:02,716 INFO:   sit: 2 videos
+2025-07-29 19:20:02,717 INFO:   squat: 1 videos
+2025-07-29 19:20:02,717 INFO:   kick: 1 videos
+2025-07-29 19:20:02,720 INFO:   punch: 1 videos
+2025-07-29 19:20:02,720 INFO:   wave: 2 videos
+2025-07-29 19:20:02,721 INFO: Creating datasets...
+2025-07-29 19:20:02,721 INFO: Training samples: 52
+2025-07-29 19:20:02,721 INFO: Validation samples: 11
+2025-07-29 19:20:02,722 INFO: Test samples: 12
+2025-07-29 19:20:02,722 INFO: Initializing model...
+2025-07-29 19:20:02,980 INFO: Resuming training from epoch 30
+2025-07-29 19:20:02,982 INFO: Starting training on video clips...
+2025-07-29 19:20:02,982 INFO: Training for 50 epochs with patience 12
+2025-07-29 19:20:27,426 INFO: PoseNet ViViT Training started
+2025-07-29 19:20:27,565 INFO: PoseNet ViViT Training started
+2025-07-29 19:20:27,619 INFO: PoseNet ViViT Training started
+2025-07-29 19:20:27,673 INFO: PoseNet ViViT Training started
+2025-07-29 19:20:27,803 INFO: PoseNet ViViT Training started
+2025-07-29 19:20:27,886 INFO: PoseNet ViViT Training started
+2025-07-29 19:20:28,030 INFO: PoseNet ViViT Training started
+2025-07-29 19:20:31,688 INFO: PoseNet ViViT Training started
+2025-07-29 19:20:55,928 INFO: Epoch 31 completed in 51.99s (avg batch: 2.3894s) - Train Loss: 1.2932, Train Acc: 0.4038, Train Prec (macro): 0.2143, Train Rec (macro): 0.3500, Train F1 (macro): 0.2490
+2025-07-29 19:20:55,941 INFO: Current learning rate: 0.0000010
+2025-07-29 19:21:21,458 INFO: Validation - Loss: 1.3850, Acc: 0.2727, Prec (macro): 0.1296, Rec (macro): 0.2778, F1 (macro): 0.1741
+2025-07-29 19:21:21,540 INFO: Saved checkpoint: posenet_checkpoints_20250729_1920\checkpoint_epoch_31.pth
+2025-07-29 19:21:21,623 INFO: New best model saved at: posenet_checkpoints_20250729_1920\best_checkpoint.pth
+2025-07-29 19:21:21,624 INFO: Epoch 31 completed in 78.64 seconds
+2025-07-29 19:21:59,917 INFO: Epoch 32 completed in 37.60s (avg batch: 4.8755s) - Train Loss: 1.2921, Train Acc: 0.4038, Train Prec (macro): 0.2143, Train Rec (macro): 0.3500, Train F1 (macro): 0.2490
+2025-07-29 19:21:59,928 INFO: Current learning rate: 0.0000010
+2025-07-29 19:22:02,144 INFO: Validation - Loss: 1.3852, Acc: 0.2727, Prec (macro): 0.1296, Rec (macro): 0.2778, F1 (macro): 0.1741
+2025-07-29 19:22:02,274 INFO: Saved checkpoint: posenet_checkpoints_20250729_1920\checkpoint_epoch_32.pth
+2025-07-29 19:22:02,275 INFO: No improvement for 1 epoch(s).
+2025-07-29 19:22:02,275 INFO: Epoch 32 completed in 40.65 seconds
+2025-07-29 19:22:17,766 INFO: Epoch 33 completed in 15.02s (avg batch: 1.7671s) - Train Loss: 1.2909, Train Acc: 0.4038, Train Prec (macro): 0.2143, Train Rec (macro): 0.3500, Train F1 (macro): 0.2490
+2025-07-29 19:22:17,774 INFO: Current learning rate: 0.0000010
+2025-07-29 19:22:19,520 INFO: Validation - Loss: 1.3854, Acc: 0.2727, Prec (macro): 0.1296, Rec (macro): 0.2778, F1 (macro): 0.1741
+2025-07-29 19:22:20,602 INFO: Saved checkpoint: posenet_checkpoints_20250729_1920\checkpoint_epoch_33.pth
+2025-07-29 19:22:20,602 INFO: No improvement for 2 epoch(s).
+2025-07-29 19:22:20,602 INFO: Epoch 33 completed in 18.33 seconds
+2025-07-29 19:22:34,980 INFO: Epoch 34 completed in 13.94s (avg batch: 1.6822s) - Train Loss: 1.2896, Train Acc: 0.4038, Train Prec (macro): 0.2143, Train Rec (macro): 0.3500, Train F1 (macro): 0.2490
+2025-07-29 19:22:34,990 INFO: Current learning rate: 0.0000010
+2025-07-29 19:22:36,863 INFO: Validation - Loss: 1.3862, Acc: 0.2727, Prec (macro): 0.1296, Rec (macro): 0.2778, F1 (macro): 0.1741
+2025-07-29 19:22:36,930 INFO: Saved checkpoint: posenet_checkpoints_20250729_1920\checkpoint_epoch_34.pth
+2025-07-29 19:22:36,931 INFO: No improvement for 3 epoch(s).
+2025-07-29 19:22:36,931 INFO: Epoch 34 completed in 16.33 seconds
+2025-07-29 19:22:50,562 INFO: Epoch 35 completed in 13.21s (avg batch: 1.7349s) - Train Loss: 1.2885, Train Acc: 0.4038, Train Prec (macro): 0.2143, Train Rec (macro): 0.3500, Train F1 (macro): 0.2490
+2025-07-29 19:22:50,571 INFO: Current learning rate: 0.0000010
+2025-07-29 19:22:52,386 INFO: Validation - Loss: 1.3863, Acc: 0.2727, Prec (macro): 0.1296, Rec (macro): 0.2778, F1 (macro): 0.1741
+2025-07-29 19:22:52,451 INFO: Saved checkpoint: posenet_checkpoints_20250729_1920\checkpoint_epoch_35.pth
+2025-07-29 19:22:52,451 INFO: No improvement for 4 epoch(s).
+2025-07-29 19:22:52,451 INFO: Epoch 35 completed in 15.52 seconds
+2025-07-29 19:23:06,905 INFO: Epoch 36 completed in 13.88s (avg batch: 1.7677s) - Train Loss: 1.2876, Train Acc: 0.4038, Train Prec (macro): 0.2143, Train Rec (macro): 0.3500, Train F1 (macro): 0.2490
+2025-07-29 19:23:06,919 INFO: Current learning rate: 0.0000010
+2025-07-29 19:23:09,255 INFO: Validation - Loss: 1.3867, Acc: 0.2727, Prec (macro): 0.1296, Rec (macro): 0.2778, F1 (macro): 0.1741
+2025-07-29 19:23:09,337 INFO: Saved checkpoint: posenet_checkpoints_20250729_1920\checkpoint_epoch_36.pth
+2025-07-29 19:23:09,338 INFO: No improvement for 5 epoch(s).
+2025-07-29 19:23:09,338 INFO: Epoch 36 completed in 16.89 seconds
+2025-07-29 19:23:23,803 INFO: Epoch 37 completed in 14.03s (avg batch: 1.7957s) - Train Loss: 1.2863, Train Acc: 0.4038, Train Prec (macro): 0.2143, Train Rec (macro): 0.3500, Train F1 (macro): 0.2490
+2025-07-29 19:23:23,811 INFO: Current learning rate: 0.0000010
+2025-07-29 19:23:25,886 INFO: Validation - Loss: 1.3869, Acc: 0.2727, Prec (macro): 0.1296, Rec (macro): 0.2778, F1 (macro): 0.1741
+2025-07-29 19:23:25,958 INFO: Saved checkpoint: posenet_checkpoints_20250729_1920\checkpoint_epoch_37.pth
+2025-07-29 19:23:25,959 INFO: No improvement for 6 epoch(s).
+2025-07-29 19:23:25,959 INFO: Epoch 37 completed in 16.62 seconds
+2025-07-29 19:23:45,995 INFO: Epoch 38 completed in 18.85s (avg batch: 2.5215s) - Train Loss: 1.2854, Train Acc: 0.4038, Train Prec (macro): 0.2143, Train Rec (macro): 0.3500, Train F1 (macro): 0.2490
+2025-07-29 19:23:46,019 INFO: Current learning rate: 0.0000010
+2025-07-29 19:23:48,342 INFO: Validation - Loss: 1.3874, Acc: 0.2727, Prec (macro): 0.1296, Rec (macro): 0.2778, F1 (macro): 0.1741
+2025-07-29 19:23:48,408 INFO: Saved checkpoint: posenet_checkpoints_20250729_1920\checkpoint_epoch_38.pth
+2025-07-29 19:23:48,409 INFO: No improvement for 7 epoch(s).
+2025-07-29 19:23:48,409 INFO: Epoch 38 completed in 22.45 seconds
+2025-07-29 19:24:01,806 INFO: Epoch 39 completed in 12.96s (avg batch: 1.6916s) - Train Loss: 1.2842, Train Acc: 0.4038, Train Prec (macro): 0.2143, Train Rec (macro): 0.3500, Train F1 (macro): 0.2490
+2025-07-29 19:24:01,814 INFO: Current learning rate: 0.0000010
+2025-07-29 19:24:03,676 INFO: Validation - Loss: 1.3878, Acc: 0.2727, Prec (macro): 0.1296, Rec (macro): 0.2778, F1 (macro): 0.1741
+2025-07-29 19:24:03,763 INFO: Saved checkpoint: posenet_checkpoints_20250729_1920\checkpoint_epoch_39.pth
+2025-07-29 19:24:03,763 INFO: No improvement for 8 epoch(s).
+2025-07-29 19:24:03,764 INFO: Epoch 39 completed in 15.35 seconds
+2025-07-29 19:24:19,497 INFO: Epoch 40 completed in 14.54s (avg batch: 1.9307s) - Train Loss: 1.2835, Train Acc: 0.4038, Train Prec (macro): 0.2143, Train Rec (macro): 0.3500, Train F1 (macro): 0.2490
+2025-07-29 19:24:19,522 INFO: Current learning rate: 0.0000010
+2025-07-29 19:24:24,687 INFO: Validation - Loss: 1.3877, Acc: 0.2727, Prec (macro): 0.1296, Rec (macro): 0.2778, F1 (macro): 0.1741
+2025-07-29 19:24:24,862 INFO: Saved checkpoint: posenet_checkpoints_20250729_1920\checkpoint_epoch_40.pth
+2025-07-29 19:24:24,863 INFO: No improvement for 9 epoch(s).
+2025-07-29 19:24:24,864 INFO: Epoch 40 completed in 21.10 seconds
+2025-07-29 19:25:04,218 INFO: Epoch 41 completed in 37.74s (avg batch: 5.1110s) - Train Loss: 1.2826, Train Acc: 0.4038, Train Prec (macro): 0.2143, Train Rec (macro): 0.3500, Train F1 (macro): 0.2490
+2025-07-29 19:25:04,233 INFO: Current learning rate: 0.0000034
+2025-07-29 19:25:09,169 INFO: Validation - Loss: 1.3875, Acc: 0.2727, Prec (macro): 0.1296, Rec (macro): 0.2778, F1 (macro): 0.1741
+2025-07-29 19:25:09,345 INFO: Saved checkpoint: posenet_checkpoints_20250729_1920\checkpoint_epoch_41.pth
+2025-07-29 19:25:09,346 INFO: No improvement for 10 epoch(s).
+2025-07-29 19:25:09,347 INFO: Epoch 41 completed in 44.48 seconds
+2025-07-29 19:25:49,531 INFO: Epoch 42 completed in 39.17s (avg batch: 5.3458s) - Train Loss: 1.2819, Train Acc: 0.4038, Train Prec (macro): 0.2143, Train Rec (macro): 0.3500, Train F1 (macro): 0.2490
+2025-07-29 19:25:49,547 INFO: Current learning rate: 0.0000105
+2025-07-29 19:25:54,222 INFO: Validation - Loss: 1.3910, Acc: 0.2727, Prec (macro): 0.1481, Rec (macro): 0.2778, F1 (macro): 0.1852
+2025-07-29 19:25:54,389 INFO: Saved checkpoint: posenet_checkpoints_20250729_1920\checkpoint_epoch_42.pth
+2025-07-29 19:25:54,391 INFO: No improvement for 11 epoch(s).
+2025-07-29 19:25:54,391 INFO: Epoch 42 completed in 45.04 seconds
+2025-07-29 19:26:31,453 INFO: Epoch 43 completed in 36.07s (avg batch: 4.9078s) - Train Loss: 1.2804, Train Acc: 0.4038, Train Prec (macro): 0.2167, Train Rec (macro): 0.3500, Train F1 (macro): 0.2512
+2025-07-29 19:26:31,472 INFO: Current learning rate: 0.0000214
+2025-07-29 19:26:36,390 INFO: Validation - Loss: 1.3855, Acc: 0.2727, Prec (macro): 0.1296, Rec (macro): 0.2778, F1 (macro): 0.1741
+2025-07-29 19:26:36,518 INFO: Saved checkpoint: posenet_checkpoints_20250729_1920\checkpoint_epoch_43.pth
+2025-07-29 19:26:36,518 INFO: No improvement for 12 epoch(s).
+2025-07-29 19:26:36,519 INFO: Early stopping triggered after 43 epochs.
+2025-07-29 19:26:36,519 INFO: Total training time: 6.56 minutes
+2025-07-29 19:26:36,829 INFO: Loaded best model from posenet_checkpoints_20250729_1920\best_checkpoint.pth
+2025-07-29 19:26:54,311 INFO: Test Accuracy: 0.4167
+2025-07-29 19:26:54,312 INFO: Test Precision (macro): 0.2778
+2025-07-29 19:26:54,312 INFO: Test Recall (macro): 0.3333
+2025-07-29 19:26:54,312 INFO: Test F1 Score (macro): 0.2815
+2025-07-29 19:26:54,312 INFO: Test Precision (micro): 0.4167
+2025-07-29 19:26:54,312 INFO: Test Recall (micro): 0.4167
+2025-07-29 19:26:54,312 INFO: Test F1 Score (micro): 0.4167
+2025-07-29 19:26:54,313 INFO: Test Precision (weighted): 0.3750
+2025-07-29 19:26:54,313 INFO: Test Recall (weighted): 0.4167
+2025-07-29 19:26:54,313 INFO: Test F1 Score (weighted): 0.3667
+2025-07-29 19:26:56,140 INFO: Training metrics plots saved to posenet_checkpoints_20250729_1920
+2025-07-29 19:26:56,171 INFO: Final model saved as posenet_checkpoints_20250729_1920\posenet_vivit_model_final.pth
+2025-07-29 19:26:56,171 INFO: PoseNet ViViT training complete!

@@ -1,0 +1,23 @@
+# Machine Learning Libraries
+einops
+numpy
+timm
+fastapi
+uvicorn
+logging
+# Image Processing
+opencv-python
+
+# Data Science and Metrics
+matplotlib
+seaborn
+scikit-learn
+tqdm
+numpy
+
+# Web Framework and APIs
+fastapi
+uvicorn
+websockets
+
+

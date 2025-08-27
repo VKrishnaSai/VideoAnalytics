@@ -1,0 +1,20 @@
+2025-04-16 06:40:58,566 INFO: Training started
+2025-04-16 06:40:58,625 INFO: GPU 0: NVIDIA GeForce RTX 3050 Laptop GPU
+2025-04-16 06:40:58,625 INFO: CUDA version: 11.8
+2025-04-16 06:40:58,626 INFO: Creating checkpoints directory: checkpoints_20250416_0640
+2025-04-16 06:40:58,628 INFO: Classes: ['ApplyEyeMakeup', 'ApplyLipstick', 'Archery', 'BabyCrawling', 'BalanceBeam', 'BandMarching', 'BaseballPitch', 'Basketball', 'BasketballDunk', 'BenchPress', 'Biking', 'Billiards', 'BlowDryHair', 'BlowingCandles', 'BodyWeightSquats', 'Bowling', 'BoxingPunchingBag', 'BoxingSpeedBag', 'BreastStroke', 'BrushingTeeth', 'CleanAndJerk', 'CliffDiving', 'CricketBowling', 'CricketShot', 'CuttingInKitchen', 'Diving', 'Drumming', 'Fencing', 'FieldHockeyPenalty', 'FloorGymnastics', 'FrisbeeCatch', 'FrontCrawl', 'GolfSwing', 'Haircut', 'Hammering', 'HammerThrow', 'HandstandPushups', 'HandstandWalking', 'HeadMassage', 'HighJump', 'HorseRace', 'HorseRiding', 'HulaHoop', 'IceDancing', 'JavelinThrow', 'JugglingBalls', 'JumpingJack', 'JumpRope', 'Kayaking', 'Knitting', 'LongJump', 'Lunges', 'MilitaryParade', 'Mixing', 'MoppingFloor', 'Nunchucks', 'ParallelBars', 'PizzaTossing', 'PlayingCello', 'PlayingDaf', 'PlayingDhol', 'PlayingFlute', 'PlayingGuitar', 'PlayingPiano', 'PlayingSitar', 'PlayingTabla', 'PlayingViolin', 'PoleVault', 'PommelHorse', 'PullUps', 'Punch', 'PushUps', 'Rafting', 'RockClimbingIndoor', 'RopeClimbing', 'Rowing', 'SalsaSpin', 'ShavingBeard', 'Shotput', 'SkateBoarding', 'Skiing', 'Skijet', 'SkyDiving', 'SoccerJuggling', 'SoccerPenalty', 'StillRings', 'SumoWrestling', 'Surfing', 'Swing', 'TableTennisShot', 'TaiChi', 'TennisSwing', 'ThrowDiscus', 'TrampolineJumping', 'Typing', 'UnevenBars', 'VolleyballSpiking', 'WalkingWithDog', 'WallPushups', 'WritingOnBoard', 'YoYo']
+2025-04-16 06:40:58,863 WARNING: Warning: Video file ./UCF101/UCF-101\BrushingTeeth/v_BrushingTeeth_g11_c01.avi does not exist!
+2025-04-16 06:41:01,404 WARNING: Warning: Video file ./UCF101/UCF-101\BrushingTeeth/v_BrushingTeeth_g11_c01.avi does not exist!
+2025-04-16 06:41:02,000 INFO: Loaded 28745 training videos.
+2025-04-16 06:41:02,359 WARNING: Warning: Video file ./UCF101/UCF-101\BrushingTeeth/v_BrushingTeeth_g11_c01.avi does not exist!
+2025-04-16 06:41:03,001 INFO: Loaded 11212 videos from testlist files.
+2025-04-16 06:41:03,002 INFO: Creating datasets...
+2025-04-16 06:41:03,022 INFO: Validation samples: 5606, Test samples: 5606
+2025-04-16 06:41:03,023 INFO: Initializing model...
+2025-04-16 06:41:03,224 INFO: No checkpoint found, starting training from scratch.
+2025-04-16 06:41:03,224 INFO: Starting training...
+2025-04-16 06:41:12,623 INFO: Training started
+2025-04-16 06:41:22,163 INFO: Training started
+2025-04-16 06:41:29,768 INFO: Training started
+2025-04-16 06:41:37,533 INFO: Training started
+2025-04-16 06:41:46,782 INFO: Training started

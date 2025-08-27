@@ -1,0 +1,51 @@
+                     precision    recall  f1-score   support
+
+      eating burger     1.0000    1.0000    1.0000         6
+        eating cake     1.0000    1.0000    1.0000         3
+     eating carrots     1.0000    1.0000    1.0000         3
+       eating chips     1.0000    1.0000    1.0000         5
+   eating doughnuts     1.0000    1.0000    1.0000         3
+      eating hotdog     1.0000    1.0000    1.0000         3
+   eating ice cream     0.7000    1.0000    0.8235         7
+   eating spaghetti     1.0000    0.8889    0.9412         9
+  eating watermelon     1.0000    1.0000    1.0000         3
+           drinking     1.0000    1.0000    1.0000         4
+      drinking beer     1.0000    1.0000    1.0000         3
+     drinking shots     1.0000    0.5000    0.6667         2
+       tasting beer     1.0000    1.0000    1.0000         3
+       tasting food     1.0000    1.0000    1.0000         3
+     baking cookies     1.0000    1.0000    1.0000         6
+         barbequing     1.0000    1.0000    1.0000         8
+    cooking chicken     1.0000    1.0000    1.0000         7
+        cooking egg     1.0000    1.0000    1.0000         4
+cooking on campfire     1.0000    1.0000    1.0000         2
+   cooking sausages     1.0000    1.0000    1.0000         2
+  frying vegetables     1.0000    1.0000    1.0000         3
+      making a cake     1.0000    1.0000    1.0000         2
+  making a sandwich     1.0000    1.0000    1.0000         2
+       making pizza     1.0000    1.0000    1.0000         8
+       making sushi     1.0000    1.0000    1.0000         2
+         making tea     1.0000    1.0000    1.0000         2
+    scrambling eggs     1.0000    1.0000    1.0000         5
+answering questions     1.0000    1.0000    1.0000         2
+    waiting in line     1.0000    1.0000    1.0000         2
+        celebrating     1.0000    1.0000    1.0000         5
+            hugging     1.0000    1.0000    1.0000         3
+         bartending     1.0000    1.0000    1.0000         3
+      setting table     1.0000    1.0000    1.0000         2
+     counting money     1.0000    1.0000    1.0000         9
+     cleaning floor     1.0000    0.8333    0.9091         6
+     cleaning shoes     1.0000    1.0000    1.0000         4
+    cleaning toilet     1.0000    1.0000    1.0000         3
+   cleaning windows     1.0000    1.0000    1.0000         4
+      mopping floor     1.0000    1.0000    1.0000         4
+     washing dishes     1.0000    1.0000    1.0000         8
+      washing hands     1.0000    1.0000    1.0000         6
+      carrying baby     1.0000    1.0000    1.0000         3
+       pushing cart     1.0000    1.0000    1.0000         9
+      picking fruit     1.0000    1.0000    1.0000         5
+    unloading truck     1.0000    1.0000    1.0000         2
+
+           accuracy                         0.9842       190
+          macro avg     0.9933    0.9827    0.9853       190
+       weighted avg     0.9889    0.9842    0.9843       190

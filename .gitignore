@@ -1,0 +1,3 @@
+.qodo/
+results_posenet_videomae/posenet_videomae_model_final.pth
+posenet/src/secret.secret

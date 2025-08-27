@@ -1,0 +1,148 @@
+classes:
+- ApplyEyeMakeup
+- ApplyLipstick
+- Archery
+- BabyCrawling
+- BalanceBeam
+- BandMarching
+- BaseballPitch
+- Basketball
+- BaseballDunk
+- BenchPress
+- Biking
+- Billiards
+- BlowDryHair
+- BlowingCandles
+- BodyWeightSquats
+- Bowling
+- BoxingPunchingBag
+- BoxingSpeedBag
+- BreastStroke
+- BrushingTeeth
+- CleanAndJerk
+- CliffDiving
+- CricketBowling
+- CricketShot
+- CuttingInKitchen
+- Diving
+- Drumming
+- Fencing
+- FieldHockeyPenalty
+- FloorGymnastics
+- FrisbeeCatch
+- FrontCrawl
+- GolfSwing
+- Haircut
+- Hammering
+- HammerThrow
+- HandstandPushups
+- HandstandWalking
+- HeadMassage
+- HighJump
+- HorseRace
+- HorseRiding
+- HulaHoop
+- IceDancing
+- JavelinThrow
+- JugglingBalls
+- JumpingJack
+- JumpRope
+- Kayaking
+- Knitting
+- LongJump
+- Lunges
+- MilitaryParade
+- Mixing
+- MoppingFloor
+- Nunchucks
+- ParallelBars
+- PizzaTossing
+- PlayingCello
+- PlayingDaf
+- PlayingDhol
+- PlayingFlute
+- PlayingGuitar
+- PlayingPiano
+- PlayingSitar
+- PlayingTabla
+- PlayingViolin
+- PoleVault
+- PommelHorse
+- PullUps
+- Punch
+- PushUps
+- Rafting
+- RockClimbingIndoor
+- RopeClimbing
+- Rowing
+- SalsaSpin
+- ShavingBeard
+- Shotput
+- SkateBoarding
+- Skiing
+- Skijet
+- SkyDiving
+- SoccerJuggling
+- SoccerPenalty
+- StillRings
+- SumoWrestling
+- Surfing
+- Swing
+- TableTennisShot
+- TaiChi
+- TennisSwing
+- ThrowDiscus
+- TrampolineJumping
+- Typing
+- UnevenBars
+- VolleyballSpiking
+- WalkingWithDog
+- WallPushups
+- WritingOnBoard
+- YoYo
+image_filename_format: '{:05d}.jpg'
+skeleton_filename_format: '{:05d}.txt'
+features:
+  window_size: 5
+s1_get_skeletons_from_training_imgs.py:
+  openpose:
+    model: mobilenet_thin
+    img_size: 432x368
+  input:
+    images_description_txt: data/source_images_ucf/valid_images.txt
+    images_folder: data/source_images_ucf/
+  output:
+    images_info_txt: data_proc/raw_skeletons/images_info.txt
+    detected_skeletons_folder: data_proc/raw_skeletons/skeleton_res/
+    viz_imgs_folders: data_proc/raw_skeletons/image_viz/
+s2_put_skeleton_txts_to_a_single_txt.py:
+  input:
+    detected_skeletons_folder: data_proc/raw_skeletons/skeleton_res/
+  output:
+    all_skeletons_txt: data_proc/raw_skeletons/skeletons_info.txt
+s3_preprocess_features.py:
+  input:
+    all_skeletons_txt: data_proc/raw_skeletons/skeletons_info.txt
+  output:
+    processed_features: data_proc/features_X.csv
+    processed_features_labels: data_proc/features_Y.csv
+s4_train.py:
+  input:
+    processed_features: data_proc/features_X.csv
+    processed_features_labels: data_proc/features_Y.csv
+  output:
+    model_path: model/trained_classifier.pickle
+s5_test.py:
+  settings:
+    source:
+      webcam_max_framerate: 60.0
+      video_sample_interval: 1
+    openpose:
+      model: mobilenet_thin
+      img_size: 432x368
+    display:
+      desired_rows: 480
+  output:
+    video_name: video.avi
+    video_fps: 30.0
+    skeleton_folder_name: skeletons/

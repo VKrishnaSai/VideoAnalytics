@@ -1,0 +1,617 @@
+2025-08-08 01:27:25,774 INFO: Kinetics ResNet+LSTM Training started
+2025-08-08 01:27:25,800 INFO: Using device: cuda
+2025-08-08 01:27:26,001 INFO: GPU 0: NVIDIA RTX A6000
+2025-08-08 01:27:26,001 INFO: GPU 0 Memory: 47.5 GB
+2025-08-08 01:27:26,017 INFO: CUDA functionality test passed
+2025-08-08 01:27:26,023 INFO: Loading video data...
+2025-08-08 01:27:26,025 INFO: Found 400 classes: ['abseiling', 'air_drumming', 'answering_questions', 'applauding', 'applying_cream']... (showing first 5)
+2025-08-08 01:27:26,052 INFO: Loaded 8788 training videos.
+2025-08-08 01:27:26,060 INFO: Loaded 2015 test videos from val directory.
+2025-08-08 01:27:26,064 INFO: Final split - Training: 7030, Validation: 1758, Test: 2015
+2025-08-08 01:27:26,064 INFO:   abseiling: 46 videos
+2025-08-08 01:27:26,064 INFO:   air_drumming: 45 videos
+2025-08-08 01:27:26,064 INFO:   answering_questions: 13 videos
+2025-08-08 01:27:26,064 INFO:   applauding: 10 videos
+2025-08-08 01:27:26,064 INFO:   applying_cream: 13 videos
+2025-08-08 01:27:26,064 INFO:   archery: 45 videos
+2025-08-08 01:27:26,064 INFO:   arm_wrestling: 43 videos
+2025-08-08 01:27:26,064 INFO:   arranging_flowers: 18 videos
+2025-08-08 01:27:26,064 INFO:   assembling_computer: 16 videos
+2025-08-08 01:27:26,064 INFO:   auctioning: 15 videos
+2025-08-08 01:27:26,064 INFO:   baby_waking_up: 20 videos
+2025-08-08 01:27:26,064 INFO:   baking_cookies: 32 videos
+2025-08-08 01:27:26,064 INFO:   balloon_blowing: 27 videos
+2025-08-08 01:27:26,064 INFO:   bandaging: 18 videos
+2025-08-08 01:27:26,064 INFO:   barbequing: 41 videos
+2025-08-08 01:27:26,064 INFO:   bartending: 19 videos
+2025-08-08 01:27:26,064 INFO:   beatboxing: 34 videos
+2025-08-08 01:27:26,064 INFO:   bee_keeping: 12 videos
+2025-08-08 01:27:26,064 INFO:   belly_dancing: 37 videos
+2025-08-08 01:27:26,064 INFO:   bench_pressing: 44 videos
+2025-08-08 01:27:26,065 INFO:   bending_back: 21 videos
+2025-08-08 01:27:26,065 INFO:   bending_metal: 11 videos
+2025-08-08 01:27:26,065 INFO:   biking_through_snow: 42 videos
+2025-08-08 01:27:26,065 INFO:   blasting_sand: 27 videos
+2025-08-08 01:27:26,065 INFO:   blowing_glass: 43 videos
+2025-08-08 01:27:26,065 INFO:   blowing_leaves: 11 videos
+2025-08-08 01:27:26,065 INFO:   blowing_nose: 19 videos
+2025-08-08 01:27:26,065 INFO:   blowing_out_candles: 47 videos
+2025-08-08 01:27:26,065 INFO:   bobsledding: 21 videos
+2025-08-08 01:27:26,065 INFO:   bookbinding: 35 videos
+2025-08-08 01:27:26,065 INFO:   bouncing_on_trampoline: 23 videos
+2025-08-08 01:27:26,065 INFO:   bowling: 42 videos
+2025-08-08 01:27:26,065 INFO:   braiding_hair: 23 videos
+2025-08-08 01:27:26,065 INFO:   breading_or_breadcrumbing: 13 videos
+2025-08-08 01:27:26,065 INFO:   breakdancing: 36 videos
+2025-08-08 01:27:26,065 INFO:   brush_painting: 17 videos
+2025-08-08 01:27:26,065 INFO:   brushing_hair: 33 videos
+2025-08-08 01:27:26,065 INFO:   brushing_teeth: 46 videos
+2025-08-08 01:27:26,065 INFO:   building_cabinet: 12 videos
+2025-08-08 01:27:26,065 INFO:   building_shed: 13 videos
+2025-08-08 01:27:26,065 INFO:   bungee_jumping: 42 videos
+2025-08-08 01:27:26,065 INFO:   busking: 33 videos
+2025-08-08 01:27:26,065 INFO:   canoeing_or_kayaking: 47 videos
+2025-08-08 01:27:26,065 INFO:   capoeira: 44 videos
+2025-08-08 01:27:26,065 INFO:   carrying_baby: 19 videos
+2025-08-08 01:27:26,065 INFO:   cartwheeling: 20 videos
+2025-08-08 01:27:26,065 INFO:   carving_pumpkin: 22 videos
+2025-08-08 01:27:26,065 INFO:   catching_fish: 22 videos
+2025-08-08 01:27:26,065 INFO:   catching_or_throwing_baseball: 27 videos
+2025-08-08 01:27:26,065 INFO:   catching_or_throwing_frisbee: 40 videos
+2025-08-08 01:27:26,065 INFO:   catching_or_throwing_softball: 31 videos
+2025-08-08 01:27:26,065 INFO:   celebrating: 25 videos
+2025-08-08 01:27:26,065 INFO:   changing_oil: 24 videos
+2025-08-08 01:27:26,065 INFO:   changing_wheel: 14 videos
+2025-08-08 01:27:26,065 INFO:   checking_tires: 17 videos
+2025-08-08 01:27:26,065 INFO:   cheerleading: 46 videos
+2025-08-08 01:27:26,065 INFO:   chopping_wood: 35 videos
+2025-08-08 01:27:26,065 INFO:   clapping: 15 videos
+2025-08-08 01:27:26,065 INFO:   clay_pottery_making: 10 videos
+2025-08-08 01:27:26,065 INFO:   clean_and_jerk: 35 videos
+2025-08-08 01:27:26,065 INFO:   cleaning_floor: 32 videos
+2025-08-08 01:27:26,065 INFO:   cleaning_gutters: 20 videos
+2025-08-08 01:27:26,065 INFO:   cleaning_pool: 13 videos
+2025-08-08 01:27:26,065 INFO:   cleaning_shoes: 22 videos
+2025-08-08 01:27:26,065 INFO:   cleaning_toilet: 17 videos
+2025-08-08 01:27:26,065 INFO:   cleaning_windows: 24 videos
+2025-08-08 01:27:26,065 INFO:   climbing_a_rope: 12 videos
+2025-08-08 01:27:26,065 INFO:   climbing_ladder: 24 videos
+2025-08-08 01:27:26,065 INFO:   climbing_tree: 42 videos
+2025-08-08 01:27:26,065 INFO:   contact_juggling: 45 videos
+2025-08-08 01:27:26,065 INFO:   cooking_chicken: 37 videos
+2025-08-08 01:27:26,065 INFO:   cooking_egg: 20 videos
+2025-08-08 01:27:26,065 INFO:   cooking_on_campfire: 11 videos
+2025-08-08 01:27:26,065 INFO:   cooking_sausages: 13 videos
+2025-08-08 01:27:26,065 INFO:   counting_money: 21 videos
+2025-08-08 01:27:26,065 INFO:   country_line_dancing: 41 videos
+2025-08-08 01:27:26,065 INFO:   cracking_neck: 11 videos
+2025-08-08 01:27:26,065 INFO:   crawling_baby: 46 videos
+2025-08-08 01:27:26,065 INFO:   crossing_river: 37 videos
+2025-08-08 01:27:26,065 INFO:   crying: 37 videos
+2025-08-08 01:27:26,065 INFO:   curling_hair: 29 videos
+2025-08-08 01:27:26,065 INFO:   cutting_nails: 17 videos
+2025-08-08 01:27:26,065 INFO:   cutting_pineapple: 24 videos
+2025-08-08 01:27:26,065 INFO:   cutting_watermelon: 25 videos
+2025-08-08 01:27:26,065 INFO:   dancing_ballet: 46 videos
+2025-08-08 01:27:26,065 INFO:   dancing_charleston: 25 videos
+2025-08-08 01:27:26,065 INFO:   dancing_gangnam_style: 30 videos
+2025-08-08 01:27:26,065 INFO:   dancing_macarena: 36 videos
+2025-08-08 01:27:26,065 INFO:   deadlifting: 29 videos
+2025-08-08 01:27:26,065 INFO:   decorating_the_christmas_tree: 19 videos
+2025-08-08 01:27:26,065 INFO:   digging: 11 videos
+2025-08-08 01:27:26,065 INFO:   dining: 24 videos
+2025-08-08 01:27:26,065 INFO:   disc_golfing: 19 videos
+2025-08-08 01:27:26,065 INFO:   diving_cliff: 42 videos
+2025-08-08 01:27:26,065 INFO:   dodgeball: 21 videos
+2025-08-08 01:27:26,065 INFO:   doing_aerobics: 13 videos
+2025-08-08 01:27:26,065 INFO:   doing_laundry: 13 videos
+2025-08-08 01:27:26,065 INFO:   doing_nails: 33 videos
+2025-08-08 01:27:26,065 INFO:   drawing: 11 videos
+2025-08-08 01:27:26,065 INFO:   dribbling_basketball: 34 videos
+2025-08-08 01:27:26,065 INFO:   drinking: 20 videos
+2025-08-08 01:27:26,065 INFO:   drinking_beer: 18 videos
+2025-08-08 01:27:26,065 INFO:   drinking_shots: 11 videos
+2025-08-08 01:27:26,065 INFO:   driving_car: 38 videos
+2025-08-08 01:27:26,065 INFO:   driving_tractor: 34 videos
+2025-08-08 01:27:26,065 INFO:   drop_kicking: 26 videos
+2025-08-08 01:27:26,065 INFO:   drumming_fingers: 11 videos
+2025-08-08 01:27:26,065 INFO:   dunking_basketball: 42 videos
+2025-08-08 01:27:26,065 INFO:   dying_hair: 38 videos
+2025-08-08 01:27:26,065 INFO:   eating_burger: 30 videos
+2025-08-08 01:27:26,065 INFO:   eating_cake: 15 videos
+2025-08-08 01:27:26,065 INFO:   eating_carrots: 16 videos
+2025-08-08 01:27:26,065 INFO:   eating_chips: 25 videos
+2025-08-08 01:27:26,065 INFO:   eating_doughnuts: 16 videos
+2025-08-08 01:27:26,065 INFO:   eating_hotdog: 18 videos
+2025-08-08 01:27:26,066 INFO:   eating_ice_cream: 35 videos
+2025-08-08 01:27:26,066 INFO:   eating_spaghetti: 46 videos
+2025-08-08 01:27:26,066 INFO:   eating_watermelon: 17 videos
+2025-08-08 01:27:26,066 INFO:   egg_hunting: 16 videos
+2025-08-08 01:27:26,066 INFO:   exercising_arm: 11 videos
+2025-08-08 01:27:26,066 INFO:   exercising_with_an_exercise_ball: 12 videos
+2025-08-08 01:27:26,066 INFO:   extinguishing_fire: 19 videos
+2025-08-08 01:27:26,066 INFO:   faceplanting: 12 videos
+2025-08-08 01:27:26,066 INFO:   feeding_birds: 45 videos
+2025-08-08 01:27:26,066 INFO:   feeding_fish: 37 videos
+2025-08-08 01:27:26,066 INFO:   feeding_goats: 40 videos
+2025-08-08 01:27:26,066 INFO:   filling_eyebrows: 36 videos
+2025-08-08 01:27:26,066 INFO:   finger_snapping: 32 videos
+2025-08-08 01:27:26,066 INFO:   fixing_hair: 21 videos
+2025-08-08 01:27:26,066 INFO:   flipping_pancake: 25 videos
+2025-08-08 01:27:26,066 INFO:   flying_kite: 42 videos
+2025-08-08 01:27:26,066 INFO:   folding_clothes: 22 videos
+2025-08-08 01:27:26,066 INFO:   folding_napkins: 31 videos
+2025-08-08 01:27:26,066 INFO:   folding_paper: 30 videos
+2025-08-08 01:27:26,066 INFO:   front_raises: 36 videos
+2025-08-08 01:27:26,066 INFO:   frying_vegetables: 18 videos
+2025-08-08 01:27:26,066 INFO:   garbage_collecting: 13 videos
+2025-08-08 01:27:26,066 INFO:   gargling: 11 videos
+2025-08-08 01:27:26,066 INFO:   getting_a_haircut: 23 videos
+2025-08-08 01:27:26,066 INFO:   getting_a_tattoo: 26 videos
+2025-08-08 01:27:26,066 INFO:   giving_or_receiving_award: 36 videos
+2025-08-08 01:27:26,066 INFO:   golf_chipping: 24 videos
+2025-08-08 01:27:26,066 INFO:   golf_driving: 32 videos
+2025-08-08 01:27:26,066 INFO:   golf_putting: 43 videos
+2025-08-08 01:27:26,066 INFO:   grinding_meat: 11 videos
+2025-08-08 01:27:26,066 INFO:   grooming_dog: 20 videos
+2025-08-08 01:27:26,066 INFO:   grooming_horse: 21 videos
+2025-08-08 01:27:26,066 INFO:   gymnastics_tumbling: 44 videos
+2025-08-08 01:27:26,066 INFO:   hammer_throw: 46 videos
+2025-08-08 01:27:26,066 INFO:   headbanging: 43 videos
+2025-08-08 01:27:26,066 INFO:   headbutting: 22 videos
+2025-08-08 01:27:26,066 INFO:   high_jump: 37 videos
+2025-08-08 01:27:26,066 INFO:   high_kick: 30 videos
+2025-08-08 01:27:26,066 INFO:   hitting_baseball: 42 videos
+2025-08-08 01:27:26,066 INFO:   hockey_stop: 14 videos
+2025-08-08 01:27:26,066 INFO:   holding_snake: 11 videos
+2025-08-08 01:27:26,066 INFO:   hopscotch: 26 videos
+2025-08-08 01:27:26,066 INFO:   hoverboarding: 13 videos
+2025-08-08 01:27:26,066 INFO:   hugging: 16 videos
+2025-08-08 01:27:26,066 INFO:   hula_hooping: 45 videos
+2025-08-08 01:27:26,066 INFO:   hurdling: 22 videos
+2025-08-08 01:27:26,066 INFO:   hurling__sport_: 32 videos
+2025-08-08 01:27:26,066 INFO:   ice_climbing: 32 videos
+2025-08-08 01:27:26,066 INFO:   ice_fishing: 19 videos
+2025-08-08 01:27:26,066 INFO:   ice_skating: 44 videos
+2025-08-08 01:27:26,066 INFO:   ironing: 16 videos
+2025-08-08 01:27:26,066 INFO:   javelin_throw: 35 videos
+2025-08-08 01:27:26,066 INFO:   jetskiing: 46 videos
+2025-08-08 01:27:26,066 INFO:   jogging: 11 videos
+2025-08-08 01:27:26,066 INFO:   juggling_balls: 35 videos
+2025-08-08 01:27:26,066 INFO:   juggling_fire: 24 videos
+2025-08-08 01:27:26,066 INFO:   juggling_soccer_ball: 14 videos
+2025-08-08 01:27:26,066 INFO:   jumping_into_pool: 44 videos
+2025-08-08 01:27:26,066 INFO:   jumpstyle_dancing: 23 videos
+2025-08-08 01:27:26,066 INFO:   kicking_field_goal: 31 videos
+2025-08-08 01:27:26,066 INFO:   kicking_soccer_ball: 17 videos
+2025-08-08 01:27:26,066 INFO:   kissing: 16 videos
+2025-08-08 01:27:26,066 INFO:   kitesurfing: 30 videos
+2025-08-08 01:27:26,066 INFO:   knitting: 24 videos
+2025-08-08 01:27:26,066 INFO:   krumping: 23 videos
+2025-08-08 01:27:26,066 INFO:   laughing: 32 videos
+2025-08-08 01:27:26,066 INFO:   laying_bricks: 12 videos
+2025-08-08 01:27:26,066 INFO:   long_jump: 32 videos
+2025-08-08 01:27:26,066 INFO:   lunge: 27 videos
+2025-08-08 01:27:26,066 INFO:   making_a_cake: 12 videos
+2025-08-08 01:27:26,066 INFO:   making_a_sandwich: 12 videos
+2025-08-08 01:27:26,066 INFO:   making_bed: 23 videos
+2025-08-08 01:27:26,066 INFO:   making_jewelry: 22 videos
+2025-08-08 01:27:26,066 INFO:   making_pizza: 44 videos
+2025-08-08 01:27:26,066 INFO:   making_snowman: 27 videos
+2025-08-08 01:27:26,066 INFO:   making_sushi: 12 videos
+2025-08-08 01:27:26,066 INFO:   making_tea: 11 videos
+2025-08-08 01:27:26,066 INFO:   marching: 46 videos
+2025-08-08 01:27:26,066 INFO:   massaging_back: 31 videos
+2025-08-08 01:27:26,066 INFO:   massaging_feet: 11 videos
+2025-08-08 01:27:26,066 INFO:   massaging_legs: 12 videos
+2025-08-08 01:27:26,066 INFO:   massaging_person's_head: 20 videos
+2025-08-08 01:27:26,066 INFO:   milking_cow: 37 videos
+2025-08-08 01:27:26,066 INFO:   mopping_floor: 20 videos
+2025-08-08 01:27:26,066 INFO:   motorcycling: 41 videos
+2025-08-08 01:27:26,066 INFO:   moving_furniture: 12 videos
+2025-08-08 01:27:26,066 INFO:   mowing_lawn: 45 videos
+2025-08-08 01:27:26,066 INFO:   news_anchoring: 11 videos
+2025-08-08 01:27:26,066 INFO:   opening_bottle: 25 videos
+2025-08-08 01:27:26,066 INFO:   opening_present: 32 videos
+2025-08-08 01:27:26,066 INFO:   paragliding: 30 videos
+2025-08-08 01:27:26,066 INFO:   parasailing: 28 videos
+2025-08-08 01:27:26,066 INFO:   parkour: 15 videos
+2025-08-08 01:27:26,066 INFO:   passing_American_football__in_game_: 35 videos
+2025-08-08 01:27:26,066 INFO:   passing_American_football__not_in_game_: 39 videos
+2025-08-08 01:27:26,067 INFO:   peeling_apples: 19 videos
+2025-08-08 01:27:26,067 INFO:   peeling_potatoes: 12 videos
+2025-08-08 01:27:26,067 INFO:   petting_animal__not_cat_: 28 videos
+2025-08-08 01:27:26,067 INFO:   petting_cat: 25 videos
+2025-08-08 01:27:26,067 INFO:   picking_fruit: 29 videos
+2025-08-08 01:27:26,067 INFO:   planting_trees: 18 videos
+2025-08-08 01:27:26,067 INFO:   plastering: 12 videos
+2025-08-08 01:27:26,067 INFO:   playing_accordion: 34 videos
+2025-08-08 01:27:26,067 INFO:   playing_badminton: 35 videos
+2025-08-08 01:27:26,067 INFO:   playing_bagpipes: 31 videos
+2025-08-08 01:27:26,067 INFO:   playing_basketball: 43 videos
+2025-08-08 01:27:26,067 INFO:   playing_bass_guitar: 43 videos
+2025-08-08 01:27:26,067 INFO:   playing_cards: 26 videos
+2025-08-08 01:27:26,067 INFO:   playing_cello: 42 videos
+2025-08-08 01:27:26,067 INFO:   playing_chess: 29 videos
+2025-08-08 01:27:26,067 INFO:   playing_clarinet: 40 videos
+2025-08-08 01:27:26,067 INFO:   playing_controller: 17 videos
+2025-08-08 01:27:26,067 INFO:   playing_cricket: 30 videos
+2025-08-08 01:27:26,067 INFO:   playing_cymbals: 23 videos
+2025-08-08 01:27:26,067 INFO:   playing_didgeridoo: 30 videos
+2025-08-08 01:27:26,067 INFO:   playing_drums: 34 videos
+2025-08-08 01:27:26,067 INFO:   playing_flute: 14 videos
+2025-08-08 01:27:26,067 INFO:   playing_guitar: 43 videos
+2025-08-08 01:27:26,067 INFO:   playing_harmonica: 39 videos
+2025-08-08 01:27:26,067 INFO:   playing_harp: 46 videos
+2025-08-08 01:27:26,067 INFO:   playing_ice_hockey: 33 videos
+2025-08-08 01:27:26,067 INFO:   playing_keyboard: 25 videos
+2025-08-08 01:27:26,067 INFO:   playing_kickball: 15 videos
+2025-08-08 01:27:26,067 INFO:   playing_monopoly: 23 videos
+2025-08-08 01:27:26,067 INFO:   playing_organ: 23 videos
+2025-08-08 01:27:26,067 INFO:   playing_paintball: 46 videos
+2025-08-08 01:27:26,067 INFO:   playing_piano: 23 videos
+2025-08-08 01:27:26,067 INFO:   playing_poker: 33 videos
+2025-08-08 01:27:26,067 INFO:   playing_recorder: 42 videos
+2025-08-08 01:27:26,067 INFO:   playing_saxophone: 33 videos
+2025-08-08 01:27:26,067 INFO:   playing_squash_or_racquetball: 37 videos
+2025-08-08 01:27:26,067 INFO:   playing_tennis: 44 videos
+2025-08-08 01:27:26,067 INFO:   playing_trombone: 44 videos
+2025-08-08 01:27:26,067 INFO:   playing_trumpet: 38 videos
+2025-08-08 01:27:26,067 INFO:   playing_ukulele: 45 videos
+2025-08-08 01:27:26,067 INFO:   playing_violin: 44 videos
+2025-08-08 01:27:26,067 INFO:   playing_volleyball: 27 videos
+2025-08-08 01:27:26,067 INFO:   playing_xylophone: 27 videos
+2025-08-08 01:27:26,067 INFO:   pole_vault: 38 videos
+2025-08-08 01:27:26,067 INFO:   presenting_weather_forecast: 43 videos
+2025-08-08 01:27:26,067 INFO:   pull_ups: 42 videos
+2025-08-08 01:27:26,067 INFO:   pumping_fist: 40 videos
+2025-08-08 01:27:26,067 INFO:   pumping_gas: 16 videos
+2025-08-08 01:27:26,067 INFO:   punching_bag: 43 videos
+2025-08-08 01:27:26,067 INFO:   punching_person__boxing_: 14 videos
+2025-08-08 01:27:26,067 INFO:   push_up: 20 videos
+2025-08-08 01:27:26,067 INFO:   pushing_car: 42 videos
+2025-08-08 01:27:26,067 INFO:   pushing_cart: 47 videos
+2025-08-08 01:27:26,067 INFO:   pushing_wheelchair: 14 videos
+2025-08-08 01:27:26,067 INFO:   reading_book: 45 videos
+2025-08-08 01:27:26,067 INFO:   reading_newspaper: 11 videos
+2025-08-08 01:27:26,067 INFO:   recording_music: 11 videos
+2025-08-08 01:27:26,067 INFO:   riding_a_bike: 14 videos
+2025-08-08 01:27:26,067 INFO:   riding_camel: 26 videos
+2025-08-08 01:27:26,067 INFO:   riding_elephant: 44 videos
+2025-08-08 01:27:26,067 INFO:   riding_mechanical_bull: 25 videos
+2025-08-08 01:27:26,067 INFO:   riding_mountain_bike: 15 videos
+2025-08-08 01:27:26,067 INFO:   riding_mule: 15 videos
+2025-08-08 01:27:26,067 INFO:   riding_or_walking_with_horse: 45 videos
+2025-08-08 01:27:26,067 INFO:   riding_scooter: 22 videos
+2025-08-08 01:27:26,067 INFO:   riding_unicycle: 31 videos
+2025-08-08 01:27:26,067 INFO:   ripping_paper: 19 videos
+2025-08-08 01:27:26,067 INFO:   robot_dancing: 32 videos
+2025-08-08 01:27:26,067 INFO:   rock_climbing: 45 videos
+2025-08-08 01:27:26,067 INFO:   rock_scissors_paper: 11 videos
+2025-08-08 01:27:26,067 INFO:   roller_skating: 36 videos
+2025-08-08 01:27:26,067 INFO:   running_on_treadmill: 11 videos
+2025-08-08 01:27:26,067 INFO:   sailing: 33 videos
+2025-08-08 01:27:26,067 INFO:   salsa_dancing: 46 videos
+2025-08-08 01:27:26,067 INFO:   sanding_floor: 19 videos
+2025-08-08 01:27:26,067 INFO:   scrambling_eggs: 28 videos
+2025-08-08 01:27:26,067 INFO:   scuba_diving: 37 videos
+2025-08-08 01:27:26,067 INFO:   setting_table: 14 videos
+2025-08-08 01:27:26,067 INFO:   shaking_hands: 22 videos
+2025-08-08 01:27:26,067 INFO:   shaking_head: 34 videos
+2025-08-08 01:27:26,067 INFO:   sharpening_knives: 12 videos
+2025-08-08 01:27:26,067 INFO:   sharpening_pencil: 25 videos
+2025-08-08 01:27:26,067 INFO:   shaving_head: 34 videos
+2025-08-08 01:27:26,067 INFO:   shaving_legs: 15 videos
+2025-08-08 01:27:26,067 INFO:   shearing_sheep: 39 videos
+2025-08-08 01:27:26,067 INFO:   shining_shoes: 20 videos
+2025-08-08 01:27:26,067 INFO:   shooting_basketball: 19 videos
+2025-08-08 01:27:26,067 INFO:   shooting_goal__soccer_: 9 videos
+2025-08-08 01:27:26,067 INFO:   shot_put: 39 videos
+2025-08-08 01:27:26,067 INFO:   shoveling_snow: 33 videos
+2025-08-08 01:27:26,067 INFO:   shredding_paper: 11 videos
+2025-08-08 01:27:26,067 INFO:   shuffling_cards: 28 videos
+2025-08-08 01:27:26,067 INFO:   side_kick: 37 videos
+2025-08-08 01:27:26,067 INFO:   sign_language_interpreting: 12 videos
+2025-08-08 01:27:26,067 INFO:   singing: 46 videos
+2025-08-08 01:27:26,068 INFO:   situp: 30 videos
+2025-08-08 01:27:26,068 INFO:   skateboarding: 44 videos
+2025-08-08 01:27:26,068 INFO:   ski_jumping: 41 videos
+2025-08-08 01:27:26,068 INFO:   skiing__not_slalom_or_crosscountry_: 45 videos
+2025-08-08 01:27:26,068 INFO:   skiing_crosscountry: 15 videos
+2025-08-08 01:27:26,068 INFO:   skiing_slalom: 18 videos
+2025-08-08 01:27:26,068 INFO:   skipping_rope: 15 videos
+2025-08-08 01:27:26,068 INFO:   skydiving: 15 videos
+2025-08-08 01:27:26,068 INFO:   slacklining: 29 videos
+2025-08-08 01:27:26,068 INFO:   slapping: 13 videos
+2025-08-08 01:27:26,068 INFO:   sled_dog_racing: 30 videos
+2025-08-08 01:27:26,068 INFO:   smoking: 35 videos
+2025-08-08 01:27:26,068 INFO:   smoking_hookah: 28 videos
+2025-08-08 01:27:26,068 INFO:   snatch_weight_lifting: 37 videos
+2025-08-08 01:27:26,068 INFO:   sneezing: 15 videos
+2025-08-08 01:27:26,068 INFO:   sniffing: 10 videos
+2025-08-08 01:27:26,068 INFO:   snorkeling: 39 videos
+2025-08-08 01:27:26,068 INFO:   snowboarding: 35 videos
+2025-08-08 01:27:26,068 INFO:   snowkiting: 47 videos
+2025-08-08 01:27:26,068 INFO:   snowmobiling: 21 videos
+2025-08-08 01:27:26,068 INFO:   somersaulting: 38 videos
+2025-08-08 01:27:26,068 INFO:   spinning_poi: 45 videos
+2025-08-08 01:27:26,068 INFO:   spray_painting: 33 videos
+2025-08-08 01:27:26,068 INFO:   spraying: 15 videos
+2025-08-08 01:27:26,068 INFO:   springboard_diving: 11 videos
+2025-08-08 01:27:26,068 INFO:   squat: 45 videos
+2025-08-08 01:27:26,068 INFO:   sticking_tongue_out: 27 videos
+2025-08-08 01:27:26,068 INFO:   stomping_grapes: 13 videos
+2025-08-08 01:27:26,068 INFO:   stretching_arm: 24 videos
+2025-08-08 01:27:26,068 INFO:   stretching_leg: 29 videos
+2025-08-08 01:27:26,068 INFO:   strumming_guitar: 13 videos
+2025-08-08 01:27:26,068 INFO:   surfing_crowd: 34 videos
+2025-08-08 01:27:26,068 INFO:   surfing_water: 28 videos
+2025-08-08 01:27:26,068 INFO:   sweeping_floor: 20 videos
+2025-08-08 01:27:26,068 INFO:   swimming_backstroke: 43 videos
+2025-08-08 01:27:26,068 INFO:   swimming_breast_stroke: 32 videos
+2025-08-08 01:27:26,068 INFO:   swimming_butterfly_stroke: 24 videos
+2025-08-08 01:27:26,068 INFO:   swing_dancing: 17 videos
+2025-08-08 01:27:26,068 INFO:   swinging_legs: 11 videos
+2025-08-08 01:27:26,068 INFO:   swinging_on_something: 15 videos
+2025-08-08 01:27:26,068 INFO:   sword_fighting: 13 videos
+2025-08-08 01:27:26,068 INFO:   tai_chi: 42 videos
+2025-08-08 01:27:26,068 INFO:   taking_a_shower: 9 videos
+2025-08-08 01:27:26,068 INFO:   tango_dancing: 46 videos
+2025-08-08 01:27:26,068 INFO:   tap_dancing: 36 videos
+2025-08-08 01:27:26,068 INFO:   tapping_guitar: 30 videos
+2025-08-08 01:27:26,068 INFO:   tapping_pen: 24 videos
+2025-08-08 01:27:26,068 INFO:   tasting_beer: 19 videos
+2025-08-08 01:27:26,068 INFO:   tasting_food: 17 videos
+2025-08-08 01:27:26,068 INFO:   testifying: 15 videos
+2025-08-08 01:27:26,068 INFO:   texting: 24 videos
+2025-08-08 01:27:26,068 INFO:   throwing_axe: 30 videos
+2025-08-08 01:27:26,068 INFO:   throwing_ball: 22 videos
+2025-08-08 01:27:26,068 INFO:   throwing_discus: 44 videos
+2025-08-08 01:27:26,068 INFO:   tickling: 17 videos
+2025-08-08 01:27:26,068 INFO:   tobogganing: 47 videos
+2025-08-08 01:27:26,068 INFO:   tossing_coin: 14 videos
+2025-08-08 01:27:26,068 INFO:   tossing_salad: 14 videos
+2025-08-08 01:27:26,068 INFO:   training_dog: 15 videos
+2025-08-08 01:27:26,068 INFO:   trapezing: 29 videos
+2025-08-08 01:27:26,068 INFO:   trimming_or_shaving_beard: 36 videos
+2025-08-08 01:27:26,068 INFO:   trimming_trees: 23 videos
+2025-08-08 01:27:26,068 INFO:   triple_jump: 30 videos
+2025-08-08 01:27:26,068 INFO:   tying_bow_tie: 10 videos
+2025-08-08 01:27:26,068 INFO:   tying_knot__not_on_a_tie_: 30 videos
+2025-08-08 01:27:26,068 INFO:   tying_tie: 23 videos
+2025-08-08 01:27:26,068 INFO:   unboxing: 28 videos
+2025-08-08 01:27:26,068 INFO:   unloading_truck: 11 videos
+2025-08-08 01:27:26,068 INFO:   using_computer: 33 videos
+2025-08-08 01:27:26,068 INFO:   using_remote_controller__not_gaming_: 18 videos
+2025-08-08 01:27:26,068 INFO:   using_segway: 11 videos
+2025-08-08 01:27:26,068 INFO:   vault: 19 videos
+2025-08-08 01:27:26,068 INFO:   waiting_in_line: 13 videos
+2025-08-08 01:27:26,068 INFO:   walking_the_dog: 43 videos
+2025-08-08 01:27:26,068 INFO:   washing_dishes: 40 videos
+2025-08-08 01:27:26,068 INFO:   washing_feet: 32 videos
+2025-08-08 01:27:26,068 INFO:   washing_hair: 11 videos
+2025-08-08 01:27:26,068 INFO:   washing_hands: 34 videos
+2025-08-08 01:27:26,068 INFO:   water_skiing: 29 videos
+2025-08-08 01:27:26,068 INFO:   water_sliding: 11 videos
+2025-08-08 01:27:26,068 INFO:   watering_plants: 24 videos
+2025-08-08 01:27:26,068 INFO:   waxing_back: 17 videos
+2025-08-08 01:27:26,068 INFO:   waxing_chest: 28 videos
+2025-08-08 01:27:26,068 INFO:   waxing_eyebrows: 23 videos
+2025-08-08 01:27:26,068 INFO:   waxing_legs: 34 videos
+2025-08-08 01:27:26,068 INFO:   weaving_basket: 28 videos
+2025-08-08 01:27:26,068 INFO:   welding: 28 videos
+2025-08-08 01:27:26,068 INFO:   whistling: 11 videos
+2025-08-08 01:27:26,068 INFO:   windsurfing: 45 videos
+2025-08-08 01:27:26,068 INFO:   wrapping_present: 29 videos
+2025-08-08 01:27:26,068 INFO:   wrestling: 15 videos
+2025-08-08 01:27:26,068 INFO:   writing: 25 videos
+2025-08-08 01:27:26,068 INFO:   yawning: 10 videos
+2025-08-08 01:27:26,068 INFO:   yoga: 38 videos
+2025-08-08 01:27:26,068 INFO:   zumba: 43 videos
+2025-08-08 01:27:26,069 INFO: Number of classes: 400
+2025-08-08 01:27:26,069 INFO: Training samples: 7030
+2025-08-08 01:27:26,069 INFO: Validation samples: 1758
+2025-08-08 01:27:26,069 INFO: Test samples: 2015
+2025-08-08 01:27:32,107 INFO: Starting training...
+2025-08-08 01:27:32,108 INFO: Early stopping enabled - patience: 15, min_delta: 0.001
+2025-08-08 01:43:55,437 INFO: Epoch 1 completed in 981.66s (avg batch: 1.8162s) - Train Loss: 5.9195, Train Acc: 0.0048, Train Prec (macro): 0.0007, Train Rec (macro): 0.0031, Train F1 (macro): 0.0009
+2025-08-08 01:55:41,116 INFO: \nValidation set (1758 samples): Average loss: 5.7140, Accuracy: 0.57%, Precision: 0.00%, Recall: 0.36%, F1: 0.01%\n
+2025-08-08 01:55:41,117 INFO: Current learning rate: 0.0001000
+2025-08-08 01:55:41,117 INFO: New best validation accuracy: 0.0057
+2025-08-08 01:55:41,581 INFO: Early stopping checkpoint saved (val_loss: 5.714037)
+2025-08-08 01:55:41,581 INFO: Epoch 1 completed in 1689.47 seconds
+2025-08-08 02:11:28,820 INFO: Epoch 2 completed in 945.60s (avg batch: 1.8408s) - Train Loss: 5.6518, Train Acc: 0.0080, Train Prec (macro): 0.0020, Train Rec (macro): 0.0050, Train F1 (macro): 0.0020
+2025-08-08 02:17:01,953 INFO: \nValidation set (1758 samples): Average loss: 5.5262, Accuracy: 1.25%, Precision: 0.02%, Recall: 0.72%, F1: 0.04%\n
+2025-08-08 02:17:01,954 INFO: Current learning rate: 0.0001000
+2025-08-08 02:17:01,954 INFO: New best validation accuracy: 0.0125
+2025-08-08 02:17:02,608 INFO: Early stopping checkpoint saved (val_loss: 5.526164)
+2025-08-08 02:17:02,609 INFO: Epoch 2 completed in 1281.03 seconds
+2025-08-08 02:33:04,574 INFO: Epoch 3 completed in 960.35s (avg batch: 1.8911s) - Train Loss: 5.5090, Train Acc: 0.0112, Train Prec (macro): 0.0022, Train Rec (macro): 0.0071, Train F1 (macro): 0.0029
+2025-08-08 02:38:26,259 INFO: \nValidation set (1758 samples): Average loss: 5.4645, Accuracy: 1.25%, Precision: 0.03%, Recall: 0.72%, F1: 0.05%\n
+2025-08-08 02:38:26,259 INFO: Current learning rate: 0.0001000
+2025-08-08 02:38:26,585 INFO: Early stopping checkpoint saved (val_loss: 5.464546)
+2025-08-08 02:38:26,585 INFO: Epoch 3 completed in 1283.98 seconds
+2025-08-08 02:54:18,732 INFO: Epoch 4 completed in 950.14s (avg batch: 1.8956s) - Train Loss: 5.4071, Train Acc: 0.0114, Train Prec (macro): 0.0037, Train Rec (macro): 0.0073, Train F1 (macro): 0.0034
+2025-08-08 02:59:50,681 INFO: \nValidation set (1758 samples): Average loss: 5.3652, Accuracy: 1.25%, Precision: 0.04%, Recall: 0.75%, F1: 0.08%\n
+2025-08-08 02:59:50,682 INFO: Current learning rate: 0.0001000
+2025-08-08 02:59:50,997 INFO: Early stopping checkpoint saved (val_loss: 5.365224)
+2025-08-08 02:59:50,997 INFO: Epoch 4 completed in 1284.41 seconds
+2025-08-08 03:15:38,126 INFO: Epoch 5 completed in 945.48s (avg batch: 1.8938s) - Train Loss: 5.3324, Train Acc: 0.0142, Train Prec (macro): 0.0034, Train Rec (macro): 0.0089, Train F1 (macro): 0.0039
+2025-08-08 03:21:02,564 INFO: \nValidation set (1758 samples): Average loss: 5.3394, Accuracy: 1.42%, Precision: 0.07%, Recall: 0.87%, F1: 0.11%\n
+2025-08-08 03:21:02,564 INFO: Current learning rate: 0.0000999
+2025-08-08 03:21:02,564 INFO: New best validation accuracy: 0.0142
+2025-08-08 03:21:03,219 INFO: Early stopping checkpoint saved (val_loss: 5.339366)
+2025-08-08 03:21:03,220 INFO: Epoch 5 completed in 1272.22 seconds
+2025-08-08 03:36:49,456 INFO: Epoch 6 completed in 944.66s (avg batch: 1.8861s) - Train Loss: 5.2509, Train Acc: 0.0145, Train Prec (macro): 0.0033, Train Rec (macro): 0.0093, Train F1 (macro): 0.0042
+2025-08-08 03:42:12,503 INFO: \nValidation set (1758 samples): Average loss: 5.2894, Accuracy: 1.59%, Precision: 0.08%, Recall: 0.93%, F1: 0.13%\n
+2025-08-08 03:42:12,503 INFO: Current learning rate: 0.0000999
+2025-08-08 03:42:12,503 INFO: New best validation accuracy: 0.0159
+2025-08-08 03:42:13,242 INFO: Early stopping checkpoint saved (val_loss: 5.289436)
+2025-08-08 03:42:13,242 INFO: Epoch 6 completed in 1270.02 seconds
+2025-08-08 03:57:44,568 INFO: Epoch 7 completed in 929.74s (avg batch: 1.9063s) - Train Loss: 5.1715, Train Acc: 0.0185, Train Prec (macro): 0.0061, Train Rec (macro): 0.0121, Train F1 (macro): 0.0060
+2025-08-08 04:03:27,868 INFO: \nValidation set (1758 samples): Average loss: 5.3094, Accuracy: 2.05%, Precision: 0.27%, Recall: 1.24%, F1: 0.33%\n
+2025-08-08 04:03:27,868 INFO: Current learning rate: 0.0000999
+2025-08-08 04:03:27,869 INFO: New best validation accuracy: 0.0205
+2025-08-08 04:03:28,252 INFO: EarlyStopping counter: 1 out of 15
+2025-08-08 04:03:28,252 INFO: Epoch 7 completed in 1275.01 seconds
+2025-08-08 04:19:02,969 INFO: Epoch 8 completed in 933.11s (avg batch: 1.9048s) - Train Loss: 5.0895, Train Acc: 0.0199, Train Prec (macro): 0.0061, Train Rec (macro): 0.0132, Train F1 (macro): 0.0067
+2025-08-08 04:24:35,305 INFO: \nValidation set (1758 samples): Average loss: 5.2772, Accuracy: 2.10%, Precision: 0.18%, Recall: 1.31%, F1: 0.29%\n
+2025-08-08 04:24:35,305 INFO: Current learning rate: 0.0000998
+2025-08-08 04:24:35,305 INFO: New best validation accuracy: 0.0210
+2025-08-08 04:24:36,004 INFO: Early stopping checkpoint saved (val_loss: 5.277170)
+2025-08-08 04:24:36,005 INFO: Epoch 8 completed in 1267.75 seconds
+2025-08-08 04:40:08,197 INFO: Epoch 9 completed in 930.55s (avg batch: 1.9033s) - Train Loss: 5.0356, Train Acc: 0.0235, Train Prec (macro): 0.0084, Train Rec (macro): 0.0156, Train F1 (macro): 0.0091
+2025-08-08 04:45:33,606 INFO: \nValidation set (1758 samples): Average loss: 5.2437, Accuracy: 2.39%, Precision: 0.18%, Recall: 1.47%, F1: 0.30%\n
+2025-08-08 04:45:33,606 INFO: Current learning rate: 0.0000998
+2025-08-08 04:45:33,606 INFO: New best validation accuracy: 0.0239
+2025-08-08 04:45:34,256 INFO: Early stopping checkpoint saved (val_loss: 5.243687)
+2025-08-08 04:45:34,257 INFO: Epoch 9 completed in 1258.25 seconds
+2025-08-08 05:01:20,820 INFO: Epoch 10 completed in 944.94s (avg batch: 1.8889s) - Train Loss: 4.9408, Train Acc: 0.0270, Train Prec (macro): 0.0112, Train Rec (macro): 0.0184, Train F1 (macro): 0.0107
+2025-08-08 05:06:47,409 INFO: \nValidation set (1758 samples): Average loss: 5.1537, Accuracy: 2.22%, Precision: 0.34%, Recall: 1.48%, F1: 0.49%\n
+2025-08-08 05:06:47,409 INFO: Current learning rate: 0.0000997
+2025-08-08 05:06:47,685 INFO: Checkpoint saved at epoch 10
+2025-08-08 05:06:47,995 INFO: Early stopping checkpoint saved (val_loss: 5.153746)
+2025-08-08 05:06:47,995 INFO: Epoch 10 completed in 1273.74 seconds
+2025-08-08 05:22:38,430 INFO: Epoch 11 completed in 948.81s (avg batch: 1.8932s) - Train Loss: 4.8855, Train Acc: 0.0293, Train Prec (macro): 0.0150, Train Rec (macro): 0.0197, Train F1 (macro): 0.0120
+2025-08-08 05:28:04,456 INFO: \nValidation set (1758 samples): Average loss: 5.1672, Accuracy: 2.96%, Precision: 0.67%, Recall: 1.92%, F1: 0.78%\n
+2025-08-08 05:28:04,456 INFO: Current learning rate: 0.0000997
+2025-08-08 05:28:04,456 INFO: New best validation accuracy: 0.0296
+2025-08-08 05:28:04,846 INFO: EarlyStopping counter: 1 out of 15
+2025-08-08 05:28:04,847 INFO: Epoch 11 completed in 1276.85 seconds
+2025-08-08 05:43:48,518 INFO: Epoch 12 completed in 942.05s (avg batch: 1.8890s) - Train Loss: 4.8044, Train Acc: 0.0344, Train Prec (macro): 0.0194, Train Rec (macro): 0.0236, Train F1 (macro): 0.0151
+2025-08-08 05:49:09,504 INFO: \nValidation set (1758 samples): Average loss: 5.1797, Accuracy: 3.30%, Precision: 0.75%, Recall: 2.16%, F1: 0.78%\n
+2025-08-08 05:49:09,504 INFO: Current learning rate: 0.0000996
+2025-08-08 05:49:09,504 INFO: New best validation accuracy: 0.0330
+2025-08-08 05:49:09,901 INFO: EarlyStopping counter: 2 out of 15
+2025-08-08 05:49:09,901 INFO: Epoch 12 completed in 1265.05 seconds
+2025-08-08 06:04:53,468 INFO: Epoch 13 completed in 941.95s (avg batch: 1.8937s) - Train Loss: 4.7373, Train Acc: 0.0357, Train Prec (macro): 0.0199, Train Rec (macro): 0.0249, Train F1 (macro): 0.0164
+2025-08-08 06:10:20,903 INFO: \nValidation set (1758 samples): Average loss: 5.2862, Accuracy: 2.96%, Precision: 0.52%, Recall: 1.97%, F1: 0.73%\n
+2025-08-08 06:10:20,903 INFO: Current learning rate: 0.0000995
+2025-08-08 06:10:20,903 INFO: EarlyStopping counter: 3 out of 15
+2025-08-08 06:10:20,903 INFO: Epoch 13 completed in 1271.00 seconds
+2025-08-08 06:25:52,780 INFO: Epoch 14 completed in 930.19s (avg batch: 1.9055s) - Train Loss: 4.6412, Train Acc: 0.0465, Train Prec (macro): 0.0226, Train Rec (macro): 0.0315, Train F1 (macro): 0.0215
+2025-08-08 06:31:28,648 INFO: \nValidation set (1758 samples): Average loss: 5.1422, Accuracy: 3.87%, Precision: 1.72%, Recall: 2.64%, F1: 1.35%\n
+2025-08-08 06:31:28,648 INFO: Current learning rate: 0.0000995
+2025-08-08 06:31:28,649 INFO: New best validation accuracy: 0.0387
+2025-08-08 06:31:29,331 INFO: Early stopping checkpoint saved (val_loss: 5.142200)
+2025-08-08 06:31:29,332 INFO: Epoch 14 completed in 1268.41 seconds
+2025-08-08 06:46:56,949 INFO: Epoch 15 completed in 925.97s (avg batch: 1.9059s) - Train Loss: 4.5614, Train Acc: 0.0538, Train Prec (macro): 0.0227, Train Rec (macro): 0.0373, Train F1 (macro): 0.0246
+2025-08-08 06:52:36,226 INFO: \nValidation set (1758 samples): Average loss: 5.1303, Accuracy: 4.15%, Precision: 1.02%, Recall: 2.67%, F1: 1.32%\n
+2025-08-08 06:52:36,226 INFO: Current learning rate: 0.0000994
+2025-08-08 06:52:36,226 INFO: New best validation accuracy: 0.0415
+2025-08-08 06:52:36,920 INFO: Early stopping checkpoint saved (val_loss: 5.130283)
+2025-08-08 06:52:36,920 INFO: Epoch 15 completed in 1267.59 seconds
+2025-08-08 07:08:09,450 INFO: Epoch 16 completed in 930.89s (avg batch: 1.9060s) - Train Loss: 4.4772, Train Acc: 0.0563, Train Prec (macro): 0.0299, Train Rec (macro): 0.0387, Train F1 (macro): 0.0268
+2025-08-08 07:13:36,273 INFO: \nValidation set (1758 samples): Average loss: 5.3436, Accuracy: 3.87%, Precision: 0.87%, Recall: 2.64%, F1: 1.17%\n
+2025-08-08 07:13:36,273 INFO: Current learning rate: 0.0000993
+2025-08-08 07:13:36,273 INFO: EarlyStopping counter: 1 out of 15
+2025-08-08 07:13:36,273 INFO: Epoch 16 completed in 1259.35 seconds
+2025-08-08 07:29:34,750 INFO: Epoch 17 completed in 956.80s (avg batch: 1.8895s) - Train Loss: 4.4170, Train Acc: 0.0629, Train Prec (macro): 0.0312, Train Rec (macro): 0.0449, Train F1 (macro): 0.0309
+2025-08-08 07:34:59,828 INFO: \nValidation set (1758 samples): Average loss: 5.2555, Accuracy: 4.72%, Precision: 1.33%, Recall: 3.12%, F1: 1.52%\n
+2025-08-08 07:34:59,828 INFO: Current learning rate: 0.0000992
+2025-08-08 07:34:59,828 INFO: New best validation accuracy: 0.0472
+2025-08-08 07:35:00,230 INFO: EarlyStopping counter: 2 out of 15
+2025-08-08 07:35:00,230 INFO: Epoch 17 completed in 1283.94 seconds
+2025-08-08 07:50:41,932 INFO: Epoch 18 completed in 940.07s (avg batch: 1.8918s) - Train Loss: 4.3009, Train Acc: 0.0701, Train Prec (macro): 0.0345, Train Rec (macro): 0.0487, Train F1 (macro): 0.0334
+2025-08-08 07:56:09,693 INFO: \nValidation set (1758 samples): Average loss: 5.2200, Accuracy: 4.32%, Precision: 1.27%, Recall: 2.84%, F1: 1.49%\n
+2025-08-08 07:56:09,693 INFO: Current learning rate: 0.0000991
+2025-08-08 07:56:09,693 INFO: EarlyStopping counter: 3 out of 15
+2025-08-08 07:56:09,693 INFO: Epoch 18 completed in 1269.46 seconds
+2025-08-08 08:11:59,013 INFO: Epoch 19 completed in 947.63s (avg batch: 1.8937s) - Train Loss: 4.2223, Train Acc: 0.0797, Train Prec (macro): 0.0409, Train Rec (macro): 0.0554, Train F1 (macro): 0.0400
+2025-08-08 08:17:24,357 INFO: \nValidation set (1758 samples): Average loss: 5.1989, Accuracy: 4.78%, Precision: 1.64%, Recall: 3.34%, F1: 1.74%\n
+2025-08-08 08:17:24,358 INFO: Current learning rate: 0.0000990
+2025-08-08 08:17:24,358 INFO: New best validation accuracy: 0.0478
+2025-08-08 08:17:24,753 INFO: EarlyStopping counter: 4 out of 15
+2025-08-08 08:17:24,753 INFO: Epoch 19 completed in 1275.04 seconds
+2025-08-08 08:33:13,071 INFO: Epoch 20 completed in 946.68s (avg batch: 1.8928s) - Train Loss: 4.1236, Train Acc: 0.0883, Train Prec (macro): 0.0455, Train Rec (macro): 0.0625, Train F1 (macro): 0.0464
+2025-08-08 08:38:42,897 INFO: \nValidation set (1758 samples): Average loss: 5.1887, Accuracy: 5.01%, Precision: 1.58%, Recall: 3.45%, F1: 1.89%\n
+2025-08-08 08:38:42,897 INFO: Current learning rate: 0.0000989
+2025-08-08 08:38:42,897 INFO: New best validation accuracy: 0.0501
+2025-08-08 08:38:43,558 INFO: Checkpoint saved at epoch 20
+2025-08-08 08:38:43,558 INFO: EarlyStopping counter: 5 out of 15
+2025-08-08 08:38:43,558 INFO: Epoch 20 completed in 1278.80 seconds
+2025-08-08 08:54:36,044 INFO: Epoch 21 completed in 950.87s (avg batch: 1.8947s) - Train Loss: 4.0335, Train Acc: 0.1027, Train Prec (macro): 0.0541, Train Rec (macro): 0.0743, Train F1 (macro): 0.0553
+2025-08-08 08:59:58,901 INFO: \nValidation set (1758 samples): Average loss: 5.2976, Accuracy: 4.95%, Precision: 1.48%, Recall: 3.34%, F1: 1.87%\n
+2025-08-08 08:59:58,901 INFO: Current learning rate: 0.0000988
+2025-08-08 08:59:58,901 INFO: EarlyStopping counter: 6 out of 15
+2025-08-08 08:59:58,901 INFO: Epoch 21 completed in 1275.34 seconds
+2025-08-08 09:15:27,298 INFO: Epoch 22 completed in 926.77s (avg batch: 1.9024s) - Train Loss: 3.9346, Train Acc: 0.1013, Train Prec (macro): 0.0584, Train Rec (macro): 0.0740, Train F1 (macro): 0.0569
+2025-08-08 09:21:13,785 INFO: \nValidation set (1758 samples): Average loss: 5.2622, Accuracy: 5.01%, Precision: 2.23%, Recall: 3.73%, F1: 2.36%\n
+2025-08-08 09:21:13,785 INFO: Current learning rate: 0.0000987
+2025-08-08 09:21:13,785 INFO: EarlyStopping counter: 7 out of 15
+2025-08-08 09:21:13,785 INFO: Epoch 22 completed in 1274.87 seconds
+2025-08-08 09:36:48,720 INFO: Epoch 23 completed in 933.30s (avg batch: 1.9035s) - Train Loss: 3.8588, Train Acc: 0.1131, Train Prec (macro): 0.0684, Train Rec (macro): 0.0845, Train F1 (macro): 0.0662
+2025-08-08 09:42:19,437 INFO: \nValidation set (1758 samples): Average loss: 5.4216, Accuracy: 5.18%, Precision: 2.59%, Recall: 3.77%, F1: 2.56%\n
+2025-08-08 09:42:19,437 INFO: Current learning rate: 0.0000986
+2025-08-08 09:42:19,437 INFO: New best validation accuracy: 0.0518
+2025-08-08 09:42:19,847 INFO: EarlyStopping counter: 8 out of 15
+2025-08-08 09:42:19,847 INFO: Epoch 23 completed in 1266.04 seconds
+2025-08-08 09:57:52,350 INFO: Epoch 24 completed in 930.88s (avg batch: 1.8972s) - Train Loss: 3.7572, Train Acc: 0.1233, Train Prec (macro): 0.0771, Train Rec (macro): 0.0914, Train F1 (macro): 0.0728
+2025-08-08 10:03:17,702 INFO: \nValidation set (1758 samples): Average loss: 5.4356, Accuracy: 5.35%, Precision: 2.00%, Recall: 3.66%, F1: 2.12%\n
+2025-08-08 10:03:17,702 INFO: Current learning rate: 0.0000984
+2025-08-08 10:03:17,702 INFO: New best validation accuracy: 0.0535
+2025-08-08 10:03:18,110 INFO: EarlyStopping counter: 9 out of 15
+2025-08-08 10:03:18,110 INFO: Epoch 24 completed in 1258.26 seconds
+2025-08-08 10:19:08,284 INFO: Epoch 25 completed in 948.53s (avg batch: 1.8933s) - Train Loss: 3.6811, Train Acc: 0.1380, Train Prec (macro): 0.0857, Train Rec (macro): 0.1036, Train F1 (macro): 0.0833
+2025-08-08 10:24:35,740 INFO: \nValidation set (1758 samples): Average loss: 5.6110, Accuracy: 4.61%, Precision: 1.28%, Recall: 3.09%, F1: 1.70%\n
+2025-08-08 10:24:35,740 INFO: Current learning rate: 0.0000983
+2025-08-08 10:24:35,740 INFO: EarlyStopping counter: 10 out of 15
+2025-08-08 10:24:35,740 INFO: Epoch 25 completed in 1277.63 seconds
+2025-08-08 10:40:21,659 INFO: Epoch 26 completed in 944.27s (avg batch: 1.8915s) - Train Loss: 3.5883, Train Acc: 0.1428, Train Prec (macro): 0.0888, Train Rec (macro): 0.1070, Train F1 (macro): 0.0878
+2025-08-08 10:45:48,657 INFO: \nValidation set (1758 samples): Average loss: 5.3906, Accuracy: 6.43%, Precision: 3.49%, Recall: 4.83%, F1: 3.53%\n
+2025-08-08 10:45:48,658 INFO: Current learning rate: 0.0000982
+2025-08-08 10:45:48,658 INFO: New best validation accuracy: 0.0643
+2025-08-08 10:45:49,086 INFO: EarlyStopping counter: 11 out of 15
+2025-08-08 10:45:49,086 INFO: Epoch 26 completed in 1273.33 seconds
+2025-08-08 11:01:32,185 INFO: Epoch 27 completed in 941.46s (avg batch: 1.8959s) - Train Loss: 3.4838, Train Acc: 0.1619, Train Prec (macro): 0.1064, Train Rec (macro): 0.1227, Train F1 (macro): 0.1023
+2025-08-08 11:07:00,093 INFO: \nValidation set (1758 samples): Average loss: 5.5678, Accuracy: 5.80%, Precision: 2.77%, Recall: 4.21%, F1: 3.01%\n
+2025-08-08 11:07:00,093 INFO: Current learning rate: 0.0000980
+2025-08-08 11:07:00,093 INFO: EarlyStopping counter: 12 out of 15
+2025-08-08 11:07:00,093 INFO: Epoch 27 completed in 1271.01 seconds
+2025-08-08 11:22:49,003 INFO: Epoch 28 completed in 947.26s (avg batch: 1.8889s) - Train Loss: 3.4166, Train Acc: 0.1687, Train Prec (macro): 0.1132, Train Rec (macro): 0.1300, Train F1 (macro): 0.1109
+2025-08-08 11:28:13,507 INFO: \nValidation set (1758 samples): Average loss: 5.5667, Accuracy: 6.14%, Precision: 2.94%, Recall: 4.26%, F1: 2.95%\n
+2025-08-08 11:28:13,507 INFO: Current learning rate: 0.0000979
+2025-08-08 11:28:13,508 INFO: EarlyStopping counter: 13 out of 15
+2025-08-08 11:28:13,508 INFO: Epoch 28 completed in 1273.39 seconds
+2025-08-08 11:44:00,115 INFO: Epoch 29 completed in 944.98s (avg batch: 1.8997s) - Train Loss: 3.3227, Train Acc: 0.1832, Train Prec (macro): 0.1281, Train Rec (macro): 0.1411, Train F1 (macro): 0.1204
+2025-08-08 11:49:32,208 INFO: \nValidation set (1758 samples): Average loss: 5.6569, Accuracy: 5.75%, Precision: 2.91%, Recall: 4.02%, F1: 3.04%\n
+2025-08-08 11:49:32,209 INFO: Current learning rate: 0.0000977
+2025-08-08 11:49:32,209 INFO: EarlyStopping counter: 14 out of 15
+2025-08-08 11:49:32,209 INFO: Epoch 29 completed in 1278.68 seconds
+2025-08-08 12:05:11,823 INFO: Epoch 30 completed in 937.92s (avg batch: 1.9049s) - Train Loss: 3.2742, Train Acc: 0.1875, Train Prec (macro): 0.1333, Train Rec (macro): 0.1477, Train F1 (macro): 0.1281
+2025-08-08 12:10:53,164 INFO: \nValidation set (1758 samples): Average loss: 5.6489, Accuracy: 6.48%, Precision: 3.23%, Recall: 4.67%, F1: 3.37%\n
+2025-08-08 12:10:53,164 INFO: Current learning rate: 0.0000976
+2025-08-08 12:10:53,164 INFO: New best validation accuracy: 0.0648
+2025-08-08 12:10:53,791 INFO: Checkpoint saved at epoch 30
+2025-08-08 12:10:53,791 INFO: EarlyStopping counter: 15 out of 15
+2025-08-08 12:10:53,791 INFO: Early stopping triggered! Best validation loss: 5.130283 at epoch 15
+2025-08-08 12:10:53,791 INFO: ==================================================
+2025-08-08 12:10:53,791 INFO: Early stopping triggered!
+2025-08-08 12:10:59,171 INFO: Loaded best model weights from epoch 15
+2025-08-08 12:10:59,171 INFO: Restored best model weights
+2025-08-08 12:10:59,171 INFO: Training stopped at epoch 30
+2025-08-08 12:10:59,171 INFO: Best validation loss: 5.130283 at epoch 15
+2025-08-08 12:10:59,171 INFO: Total training time: 643.45 minutes
+2025-08-08 12:10:59,172 INFO: \n==================================================
+2025-08-08 12:10:59,172 INFO: Final evaluation on test set...
+2025-08-08 12:10:59,172 INFO: Loading early stopping best model for final evaluation...
+2025-08-08 12:11:04,501 INFO: Successfully loaded early stopping best model
+2025-08-08 12:16:58,537 INFO: \nValidation set (2015 samples): Average loss: 5.1228, Accuracy: 4.27%, Precision: 1.00%, Recall: 2.72%, F1: 1.26%\n
+2025-08-08 12:16:58,538 INFO: Final Test Results(Early Stopping Best Model):
+2025-08-08 12:16:58,538 INFO:   Accuracy: 0.0427
+2025-08-08 12:16:58,538 INFO:   Precision (macro): 0.0100
+2025-08-08 12:16:58,538 INFO:   Recall (macro): 0.0272
+2025-08-08 12:16:58,538 INFO:   F1-Score (macro): 0.0126
+2025-08-08 12:16:58,538 INFO:   Precision (micro): 0.0427
+2025-08-08 12:16:58,538 INFO:   Recall (micro): 0.0427
+2025-08-08 12:16:58,538 INFO:   F1-Score (micro): 0.0427
+2025-08-08 12:16:58,538 INFO:   Precision (weighted): 0.0153
+2025-08-08 12:16:58,538 INFO:   Recall (weighted): 0.0427
+2025-08-08 12:16:58,538 INFO:   F1-Score (weighted): 0.0194
+2025-08-08 12:16:58,538 INFO: \nEarly Stopping Summary:
+2025-08-08 12:16:58,538 INFO:   Training stopped at epoch: 30
+2025-08-08 12:16:58,538 INFO:   Best epoch: 15
+2025-08-08 12:16:58,538 INFO:   Best validation loss: 5.130283
+2025-08-08 12:16:58,538 INFO:   Final epochs trained: 30/300
+2025-08-08 12:17:00,216 INFO: Training completed! Best validation accuracy: 0.0648 (Early stopped at epoch 15)
+2025-08-08 12:17:00,216 INFO: Models and results saved to: ./ResNetLSTM_Kinetics_ckpt/

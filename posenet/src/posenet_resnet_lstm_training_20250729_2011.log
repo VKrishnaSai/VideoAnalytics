@@ -1,0 +1,27 @@
+2025-07-29 20:11:17,932 INFO: PoseNet ResNet+LSTM Training started
+2025-07-29 20:11:17,935 INFO: Using device: cpu
+2025-07-29 20:11:17,935 INFO: CUDA not available, using CPU
+2025-07-29 20:11:17,936 INFO: Loading video data...
+2025-07-29 20:11:17,937 INFO: Action classes: ['stand', 'walk', 'run', 'jump', 'sit', 'squat', 'kick', 'punch', 'wave']
+2025-07-29 20:11:17,939 INFO: Found 75 video files
+2025-07-29 20:11:17,940 INFO:   stand: 11 videos
+2025-07-29 20:11:17,941 INFO:   walk: 8 videos
+2025-07-29 20:11:17,941 INFO:   run: 7 videos
+2025-07-29 20:11:17,941 INFO:   jump: 7 videos
+2025-07-29 20:11:17,942 INFO:   sit: 14 videos
+2025-07-29 20:11:17,942 INFO:   squat: 6 videos
+2025-07-29 20:11:17,942 INFO:   kick: 7 videos
+2025-07-29 20:11:17,943 INFO:   punch: 6 videos
+2025-07-29 20:11:17,943 INFO:   wave: 9 videos
+2025-07-29 20:11:17,943 INFO: Total samples: 75, Min samples per class: 6
+2025-07-29 20:11:17,944 INFO: Using standard train/val/test split with stratification.
+2025-07-29 20:11:17,949 INFO: Final split - Training: 52, Validation: 11, Test: 12
+2025-07-29 20:11:17,949 INFO: Number of classes: 9
+2025-07-29 20:11:17,949 INFO: Training samples: 52
+2025-07-29 20:11:17,951 INFO: Validation samples: 11
+2025-07-29 20:11:17,951 INFO: Test samples: 12
+2025-07-29 20:11:19,447 INFO: Starting training...
+2025-07-29 20:11:27,606 INFO: PoseNet ResNet+LSTM Training started
+2025-07-29 20:11:27,656 INFO: PoseNet ResNet+LSTM Training started
+2025-07-29 20:11:28,410 INFO: Input batch shape: torch.Size([8, 8, 3, 224, 224]), Labels shape: torch.Size([8])
+2025-07-29 20:11:28,411 INFO: Input dtype: torch.float32, Labels dtype: torch.int64

@@ -1,0 +1,13 @@
+Pillow
+cython
+matplotlib
+scikit-image
+opencv-python
+h5py
+imgaug
+pandas
+argparse
+IPython[all]
+simplejson
+scikit-learn
+slidingwindow

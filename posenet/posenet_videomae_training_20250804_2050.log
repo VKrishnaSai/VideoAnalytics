@@ -1,0 +1,71 @@
+2025-08-04 20:50:09,125 INFO: PoseNet VideoMAE Training started
+2025-08-04 20:50:09,228 INFO: GPU 0: NVIDIA GeForce RTX 3050 Laptop GPU
+2025-08-04 20:50:09,229 INFO: CUDA version: 12.8
+2025-08-04 20:50:09,229 INFO: Creating checkpoints directory: posenet_videomae_checkpoints_20250804_2050
+2025-08-04 20:50:09,230 INFO: Loading video clips data (10-second clips)...
+2025-08-04 20:50:09,232 INFO: Found data directory: ./output/video_clips
+2025-08-04 20:50:09,232 INFO: Action classes: ['stand', 'walk', 'run', 'jump', 'sit', 'squat', 'kick', 'punch', 'wave']
+2025-08-04 20:50:09,234 INFO: Found 75 video files
+2025-08-04 20:50:09,235 INFO:   stand: 11 videos
+2025-08-04 20:50:09,235 INFO:   walk: 8 videos
+2025-08-04 20:50:09,235 INFO:   run: 7 videos
+2025-08-04 20:50:09,235 INFO:   jump: 7 videos
+2025-08-04 20:50:09,237 INFO:   sit: 14 videos
+2025-08-04 20:50:09,237 INFO:   squat: 6 videos
+2025-08-04 20:50:09,237 INFO:   kick: 7 videos
+2025-08-04 20:50:09,237 INFO:   punch: 6 videos
+2025-08-04 20:50:09,238 INFO:   wave: 9 videos
+2025-08-04 20:50:09,238 INFO: Total samples: 75, Min samples per class: 6
+2025-08-04 20:50:09,238 INFO: Using standard train/val/test split with stratification.
+2025-08-04 20:50:09,250 INFO: Final split - Training: 52, Validation: 11, Test: 12
+2025-08-04 20:50:09,251 INFO: Training distribution:
+2025-08-04 20:50:09,254 INFO:   stand: 8 videos
+2025-08-04 20:50:09,254 INFO:   walk: 5 videos
+2025-08-04 20:50:09,255 INFO:   run: 5 videos
+2025-08-04 20:50:09,255 INFO:   jump: 5 videos
+2025-08-04 20:50:09,255 INFO:   sit: 10 videos
+2025-08-04 20:50:09,255 INFO:   squat: 4 videos
+2025-08-04 20:50:09,256 INFO:   kick: 5 videos
+2025-08-04 20:50:09,256 INFO:   punch: 4 videos
+2025-08-04 20:50:09,256 INFO:   wave: 6 videos
+2025-08-04 20:50:09,257 INFO: Validation distribution:
+2025-08-04 20:50:09,258 INFO:   stand: 1 videos
+2025-08-04 20:50:09,259 INFO:   walk: 2 videos
+2025-08-04 20:50:09,259 INFO:   run: 1 videos
+2025-08-04 20:50:09,260 INFO:   jump: 1 videos
+2025-08-04 20:50:09,260 INFO:   sit: 2 videos
+2025-08-04 20:50:09,261 INFO:   squat: 1 videos
+2025-08-04 20:50:09,261 INFO:   kick: 1 videos
+2025-08-04 20:50:09,261 INFO:   punch: 1 videos
+2025-08-04 20:50:09,261 INFO:   wave: 1 videos
+2025-08-04 20:50:09,261 INFO: Test distribution:
+2025-08-04 20:50:09,263 INFO:   stand: 2 videos
+2025-08-04 20:50:09,263 INFO:   walk: 1 videos
+2025-08-04 20:50:09,263 INFO:   run: 1 videos
+2025-08-04 20:50:09,263 INFO:   jump: 1 videos
+2025-08-04 20:50:09,263 INFO:   sit: 2 videos
+2025-08-04 20:50:09,263 INFO:   squat: 1 videos
+2025-08-04 20:50:09,264 INFO:   kick: 1 videos
+2025-08-04 20:50:09,264 INFO:   punch: 1 videos
+2025-08-04 20:50:09,264 INFO:   wave: 2 videos
+2025-08-04 20:50:09,265 INFO: Initializing VideoMAE model and processor...
+2025-08-04 20:50:09,265 INFO: Attempting to load VideoMAE model...
+2025-08-04 20:50:12,960 INFO: VideoMAE model loaded successfully!
+2025-08-04 20:50:12,960 INFO: Creating datasets...
+2025-08-04 20:50:12,960 INFO: Training samples: 52
+2025-08-04 20:50:12,960 INFO: Validation samples: 11
+2025-08-04 20:50:12,960 INFO: Test samples: 12
+2025-08-04 20:50:12,960 INFO: Preparing model for training...
+2025-08-04 20:50:14,081 INFO: No checkpoint found, starting training from scratch.
+2025-08-04 20:50:14,082 INFO: Starting VideoMAE training on video clips...
+2025-08-04 20:50:14,082 INFO: Training for 100 epochs with patience 10
+2025-08-04 20:50:48,635 INFO: PoseNet VideoMAE Training started
+2025-08-04 20:50:48,635 INFO: PoseNet VideoMAE Training started
+2025-08-04 20:50:48,635 INFO: PoseNet VideoMAE Training started
+2025-08-04 20:50:48,635 INFO: PoseNet VideoMAE Training started
+2025-08-04 20:50:48,636 INFO: PoseNet VideoMAE Training started
+2025-08-04 20:50:48,636 INFO: PoseNet VideoMAE Training started
+2025-08-04 20:50:48,637 INFO: PoseNet VideoMAE Training started
+2025-08-04 20:51:02,322 INFO: Epoch 1 Batch 10/13 - Loss: 2.6128, Batch time: 0.6017s
+2025-08-04 20:51:08,162 INFO: Epoch 1 completed in 50.04s (avg batch: 0.8433s) - Train Loss: 2.2421, Train Acc: 0.1346, Train Prec (macro): 0.0572, Train Rec (macro): 0.1333, Train F1 (macro): 0.0779
+2025-08-04 20:51:08,165 INFO: Current learning rate: 0.0000488

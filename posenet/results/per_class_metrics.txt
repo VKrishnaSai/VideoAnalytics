@@ -1,0 +1,119 @@
+Per-Class Metrics (binary one-vs-rest) - 99/101 classes with detected skeletons:
+ApplyEyeMakeup: Accuracy: 0.9996, Precision: 0.7500, Recall: 0.8514, F1: 0.7975
+ApplyLipstick: Accuracy: 0.9999, Precision: 0.8961, Recall: 1.0000, F1: 0.9452
+Archery: Accuracy: 0.9818, Precision: 0.4828, Recall: 0.5326, F1: 0.5065
+BabyCrawling: Accuracy: 0.9923, Precision: 0.4874, Recall: 0.3681, F1: 0.4194
+BalanceBeam: Accuracy: 0.9939, Precision: 0.0625, Recall: 0.0020, F1: 0.0039
+BandMarching: Accuracy: 0.9567, Precision: 0.1577, Recall: 0.3476, F1: 0.2170
+BaseballPitch: Accuracy: 0.9657, Precision: 0.2247, Recall: 0.2866, F1: 0.2519
+Basketball: Accuracy: 0.9798, Precision: 0.1131, Recall: 0.0563, F1: 0.0752
+BenchPress: Accuracy: 0.9865, Precision: 0.4652, Recall: 0.5261, F1: 0.4938
+Biking: Accuracy: 0.9852, Precision: 0.2908, Recall: 0.2610, F1: 0.2751
+Billiards: Accuracy: 0.9927, Precision: 0.6808, Recall: 0.6026, F1: 0.6393
+BlowDryHair: Accuracy: 0.9991, Precision: 0.0769, Recall: 0.0147, F1: 0.0247
+BlowingCandles: Accuracy: 0.9957, Precision: 0.4709, Recall: 0.2771, F1: 0.3489
+BodyWeightSquats: Accuracy: 0.9854, Precision: 0.5271, Recall: 0.6576, F1: 0.5851
+Bowling: Accuracy: 0.9799, Precision: 0.4249, Recall: 0.5874, F1: 0.4931
+BoxingPunchingBag: Accuracy: 0.9794, Precision: 0.3210, Recall: 0.3190, F1: 0.3200
+BoxingSpeedBag: Accuracy: 0.9968, Precision: 0.4562, Recall: 0.6058, F1: 0.5205
+BreastStroke: Accuracy: 0.9999, Precision: 0.0000, Recall: 0.0000, F1: 0.0000
+BrushingTeeth: Accuracy: 0.9992, Precision: 0.8252, Recall: 0.6343, F1: 0.7173
+CleanAndJerk: Accuracy: 0.9858, Precision: 0.5388, Recall: 0.3784, F1: 0.4445
+CliffDiving: Accuracy: 0.9987, Precision: 0.5897, Recall: 0.2035, F1: 0.3026
+CricketBowling: Accuracy: 0.9793, Precision: 0.3807, Recall: 0.3350, F1: 0.3564
+CricketShot: Accuracy: 0.9728, Precision: 0.2999, Recall: 0.3135, F1: 0.3066
+CuttingInKitchen: Accuracy: 1.0000, Precision: 0.0000, Recall: 0.0000, F1: 0.0000
+Diving: Accuracy: 0.9954, Precision: 0.0811, Recall: 0.0085, F1: 0.0154
+Drumming: Accuracy: 0.9936, Precision: 0.5911, Recall: 0.2723, F1: 0.3728
+Fencing: Accuracy: 0.9778, Precision: 0.3445, Recall: 0.4070, F1: 0.3732
+FieldHockeyPenalty: Accuracy: 0.9826, Precision: 0.2436, Recall: 0.1674, F1: 0.1985
+FloorGymnastics: Accuracy: 0.9868, Precision: 0.1082, Recall: 0.0440, F1: 0.0626
+FrisbeeCatch: Accuracy: 0.9841, Precision: 0.2090, Recall: 0.1698, F1: 0.1873
+FrontCrawl: Accuracy: 0.9994, Precision: 0.0667, Recall: 0.0278, F1: 0.0392
+GolfSwing: Accuracy: 0.9769, Precision: 0.4626, Recall: 0.6308, F1: 0.5338
+Haircut: Accuracy: 0.9981, Precision: 0.3643, Recall: 0.3701, F1: 0.3672
+Hammering: Accuracy: 0.9945, Precision: 0.6213, Recall: 0.7664, F1: 0.6863
+HammerThrow: Accuracy: 0.9763, Precision: 0.2888, Recall: 0.2586, F1: 0.2729
+HandstandPushups: Accuracy: 0.9963, Precision: 0.5540, Recall: 0.5587, F1: 0.5563
+HandstandWalking: Accuracy: 0.9977, Precision: 0.5333, Recall: 0.1990, F1: 0.2899
+HeadMassage: Accuracy: 0.9972, Precision: 0.3020, Recall: 0.2500, F1: 0.2736
+HighJump: Accuracy: 0.9870, Precision: 0.1317, Recall: 0.0226, F1: 0.0386
+HorseRace: Accuracy: 0.9986, Precision: 0.2857, Recall: 0.0172, F1: 0.0325
+HorseRiding: Accuracy: 0.9786, Precision: 0.2683, Recall: 0.5179, F1: 0.3534
+HulaHoop: Accuracy: 0.9811, Precision: 0.3739, Recall: 0.2863, F1: 0.3243
+IceDancing: Accuracy: 0.9680, Precision: 0.1814, Recall: 0.1645, F1: 0.1726
+JavelinThrow: Accuracy: 0.9891, Precision: 0.1909, Recall: 0.0538, F1: 0.0839
+JugglingBalls: Accuracy: 0.9840, Precision: 0.4012, Recall: 0.5200, F1: 0.4529
+JumpingJack: Accuracy: 0.9786, Precision: 0.3584, Recall: 0.7016, F1: 0.4744
+JumpRope: Accuracy: 0.9797, Precision: 0.5441, Recall: 0.7079, F1: 0.6153
+Kayaking: Accuracy: 0.9945, Precision: 0.3359, Recall: 0.1053, F1: 0.1603
+LongJump: Accuracy: 0.9750, Precision: 0.1941, Recall: 0.1538, F1: 0.1717
+Lunges: Accuracy: 0.9818, Precision: 0.3707, Recall: 0.3659, F1: 0.3683
+MilitaryParade: Accuracy: 0.9897, Precision: 0.1753, Recall: 0.0458, F1: 0.0726
+Mixing: Accuracy: 0.9998, Precision: 0.9109, Recall: 0.8846, F1: 0.8976
+MoppingFloor: Accuracy: 0.9838, Precision: 0.2706, Recall: 0.2651, F1: 0.2678
+Nunchucks: Accuracy: 0.9766, Precision: 0.2790, Recall: 0.1887, F1: 0.2251
+ParallelBars: Accuracy: 0.9921, Precision: 0.3333, Recall: 0.0185, F1: 0.0350
+PizzaTossing: Accuracy: 0.9894, Precision: 0.1636, Recall: 0.0105, F1: 0.0197
+PlayingCello: Accuracy: 0.9943, Precision: 0.8038, Recall: 0.8233, F1: 0.8134
+PlayingDaf: Accuracy: 0.9932, Precision: 0.6647, Recall: 0.7470, F1: 0.7034
+PlayingDhol: Accuracy: 0.9920, Precision: 0.7950, Recall: 0.9157, F1: 0.8511
+PlayingFlute: Accuracy: 0.9975, Precision: 0.8372, Recall: 0.8386, F1: 0.8379
+PlayingGuitar: Accuracy: 0.9977, Precision: 0.7495, Recall: 0.8094, F1: 0.7783
+PlayingPiano: Accuracy: 0.9968, Precision: 0.6785, Recall: 0.8128, F1: 0.7396
+PlayingSitar: Accuracy: 0.9957, Precision: 0.8526, Recall: 0.8410, F1: 0.8467
+PlayingTabla: Accuracy: 0.9944, Precision: 0.7421, Recall: 0.7597, F1: 0.7508
+PlayingViolin: Accuracy: 0.9976, Precision: 0.5323, Recall: 0.6422, F1: 0.5821
+PoleVault: Accuracy: 0.9860, Precision: 0.1404, Recall: 0.1276, F1: 0.1337
+PommelHorse: Accuracy: 0.9894, Precision: 0.2060, Recall: 0.1259, F1: 0.1563
+PullUps: Accuracy: 0.9859, Precision: 0.3220, Recall: 0.5152, F1: 0.3963
+Punch: Accuracy: 0.9767, Precision: 0.1888, Recall: 0.1937, F1: 0.1912
+PushUps: Accuracy: 0.9996, Precision: 0.5833, Recall: 0.5833, F1: 0.5833
+Rafting: Accuracy: 0.9939, Precision: 0.2061, Recall: 0.0823, F1: 0.1176
+RockClimbingIndoor: Accuracy: 0.9930, Precision: 0.3038, Recall: 0.1619, F1: 0.2112
+RopeClimbing: Accuracy: 0.9927, Precision: 0.3951, Recall: 0.2390, F1: 0.2978
+Rowing: Accuracy: 0.9902, Precision: 0.3721, Recall: 0.4184, F1: 0.3939
+SalsaSpin: Accuracy: 0.9720, Precision: 0.1585, Recall: 0.1243, F1: 0.1393
+ShavingBeard: Accuracy: 0.9992, Precision: 0.5224, Recall: 0.5072, F1: 0.5147
+Shotput: Accuracy: 0.9815, Precision: 0.4594, Recall: 0.2225, F1: 0.2998
+SkateBoarding: Accuracy: 0.9876, Precision: 0.2700, Recall: 0.2104, F1: 0.2365
+Skiing: Accuracy: 0.9881, Precision: 0.3848, Recall: 0.4149, F1: 0.3993
+Skijet: Accuracy: 0.9951, Precision: 0.2880, Recall: 0.1642, F1: 0.2091
+SkyDiving: Accuracy: 0.9981, Precision: 0.6555, Recall: 0.4021, F1: 0.4984
+SoccerJuggling: Accuracy: 0.9579, Precision: 0.2564, Recall: 0.4897, F1: 0.3366
+SoccerPenalty: Accuracy: 0.9988, Precision: 0.2432, Recall: 0.1098, F1: 0.1513
+StillRings: Accuracy: 0.9965, Precision: 0.2000, Recall: 0.0178, F1: 0.0327
+SumoWrestling: Accuracy: 0.9774, Precision: 0.2685, Recall: 0.3448, F1: 0.3019
+Surfing: Accuracy: 0.9957, Precision: 0.3080, Recall: 0.2917, F1: 0.2996
+Swing: Accuracy: 0.9845, Precision: 0.2795, Recall: 0.2294, F1: 0.2520
+TableTennisShot: Accuracy: 0.9796, Precision: 0.5083, Recall: 0.5616, F1: 0.5336
+TaiChi: Accuracy: 0.9856, Precision: 0.5454, Recall: 0.5372, F1: 0.5413
+TennisSwing: Accuracy: 0.9651, Precision: 0.2635, Recall: 0.2965, F1: 0.2790
+ThrowDiscus: Accuracy: 0.9822, Precision: 0.2013, Recall: 0.1098, F1: 0.1421
+TrampolineJumping: Accuracy: 0.9796, Precision: 0.1879, Recall: 0.2282, F1: 0.2061
+Typing: Accuracy: 1.0000, Precision: 1.0000, Recall: 1.0000, F1: 1.0000
+UnevenBars: Accuracy: 0.9967, Precision: 0.3478, Recall: 0.0294, F1: 0.0542
+VolleyballSpiking: Accuracy: 0.9725, Precision: 0.1343, Recall: 0.2011, F1: 0.1610
+WalkingWithDog: Accuracy: 0.9724, Precision: 0.1548, Recall: 0.2370, F1: 0.1873
+WallPushups: Accuracy: 0.9945, Precision: 0.8259, Recall: 0.8692, F1: 0.8470
+WritingOnBoard: Accuracy: 0.9924, Precision: 0.7225, Recall: 0.8112, F1: 0.7643
+YoYo: Accuracy: 0.9748, Precision: 0.2912, Recall: 0.3564, F1: 0.3205
+
+Missing classes (no detected skeletons): 2
+BaseballDunk
+Knitting
+
+Overall Metrics:
+Accuracy: 0.3924
+Micro-Averaged:
+  Precision: 0.3924
+  Recall: 0.3924
+  F1 Score: 0.3924
+Macro-Averaged:
+  Precision: 0.3931
+  Recall: 0.3709
+  F1 Score: 0.3650
+Weighted-Averaged:
+  Precision: 0.3814
+  Recall: 0.3924
+  F1 Score: 0.3743
