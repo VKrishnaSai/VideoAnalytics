@@ -1,17 +1,3 @@
-"""
-Modified UCF Video Classification Training Script
-
-Key Changes:
-1. load_data() function now splits data from a single folder into 56% train, 14% val, 30% test
-2. Added load_pretrained_weights() function to load weights from 101-class model to 14-class model
-3. Model initialization includes loading pre-trained weights with proper layer filtering
-
-Usage:
-- Update the data_root path in load_data() to point to your dataset folder
-- Update pretrained_weights_path in main() to point to your pre-trained model file
-- The script will automatically handle the class mismatch between pre-trained and current models
-"""
-
 import os
 import time
 import logging
@@ -34,7 +20,7 @@ import numpy as np
 from vivit_old import ViViT, load_video
 # Import your ViViT model and load_video function from vivit.py
 # ----------------------- Logging Setup -----------------------
-log_filename = f'kinetics_training_{datetime.now().strftime("%Y%m%d")}.log'
+log_filename = f'vivit_ucfcrime_scratch/ucfcrime_training_{datetime.now().strftime("%Y%m%d")}.log'
 logging.basicConfig(
     filename=log_filename,
     level=logging.INFO,
@@ -85,7 +71,7 @@ class VideoDataset(Dataset):
         return video, label
 
 # ----------------------- Data Preparation -----------------------
-def load_data(data_root="/path/to/your/dataset"):
+def load_data(data_root="../../ucf_crime"):
     """
     Load data from a single folder containing class subdirectories and split into 56/14/30 train/val/test
     """
@@ -467,43 +453,6 @@ def train_model(model, train_loader, val_loader, test_loader, criterion, optimiz
     return best_val_loss, metrics_history
 
 # ----------------------- Utility Functions -----------------------
-def load_pretrained_weights(model, pretrained_path, num_classes_pretrained=101, num_classes_current=14):
-    """
-    Load pre-trained weights from a model trained on different number of classes
-    """
-    if not os.path.exists(pretrained_path):
-        logger.warning(f"Pre-trained weights file not found: {pretrained_path}")
-        return model
-    
-    logger.info(f"Loading pre-trained weights from: {pretrained_path}")
-    
-    # Load the pre-trained state dict
-    pretrained_state = torch.load(pretrained_path, map_location='cpu')
-    
-    # Get current model state dict
-    current_state = model.state_dict()
-    
-    # Filter out classifier layer weights if classes don't match
-    filtered_state = {}
-    for key, value in pretrained_state.items():
-        if 'head' in key or 'classifier' in key or 'fc' in key:
-            # Skip classifier weights if different number of classes
-            if value.shape != current_state[key].shape:
-                logger.info(f"Skipping {key} due to shape mismatch: {value.shape} vs {current_state[key].shape}")
-                continue
-        filtered_state[key] = value
-    
-    # Load the filtered weights
-    missing_keys, unexpected_keys = model.load_state_dict(filtered_state, strict=False)
-    
-    if missing_keys:
-        logger.info(f"Missing keys (will use random initialization): {missing_keys}")
-    if unexpected_keys:
-        logger.info(f"Unexpected keys (ignored): {unexpected_keys}")
-    
-    logger.info("Pre-trained weights loaded successfully!")
-    return model
-
 def load_best_model(model, checkpoint_path, device):
     if os.path.exists(checkpoint_path):
         checkpoint = torch.load(checkpoint_path, map_location=device)
@@ -583,13 +532,31 @@ def main():
         device = torch.device("cpu")
         logger.info("No GPU available, using CPU")
     
-    checkpoints_dir = f"checkpoints_{datetime.now().strftime('%Y%m%d_%H%M')}"
+    checkpoints_dir = f"./vivit_ucfcrime_scratch/checkpoints_{datetime.now().strftime('%Y%m%d_%H%M')}"
     logger.info(f"Creating checkpoints directory: {checkpoints_dir}")
     os.makedirs(checkpoints_dir, exist_ok=True)
     
-    # Load and split data
     train_videos, train_labels, val_videos, val_labels, test_videos, test_labels, data_subset = load_data()
     
+    '''
+    # Split training data into train and validation sets
+    train_indices, val_indices = train_test_split(
+        list(range(len(train_videos))), 
+        test_size=0.2, 
+        random_state=42, 
+        stratify=train_labels
+    )
+    
+    # Create training subset
+    train_subset_videos = [train_videos[i] for i in train_indices]
+    train_subset_labels = [train_labels[i] for i in train_indices]
+    
+    # Create validation subset from training data
+    val_subset_videos = [train_videos[i] for i in val_indices]
+    val_subset_labels = [train_labels[i] for i in val_indices]
+    '''
+
+
     logger.info("Creating datasets...")
     train_dataset = VideoDataset(train_videos, train_labels)
     val_dataset = VideoDataset(val_videos, val_labels)
@@ -631,11 +598,6 @@ def main():
     
     logger.info("Initializing model...")
     model = ViViT(image_size=224, patch_size=16, num_classes=len(data_subset), num_frames=16)
-    
-    # Load pre-trained weights (update path to your pre-trained model)
-    pretrained_weights_path = "path/to/your/pretrained_vivit_101_classes.pth"  # Update this path
-    model = load_pretrained_weights(model, pretrained_weights_path, num_classes_pretrained=101, num_classes_current=len(data_subset))
-    
     model = prepare_model(model, num_gpus=NUM_GPUS)
     model = model.to(device)
     
@@ -660,8 +622,8 @@ def main():
         logger.info("Starting training from scratch.")
     
     logger.info("Starting training...")
-    additional_epochs = 40
-    patience = 5
+    additional_epochs = 300
+    patience = 15
     best_val_loss, metrics = train_model(
         model, trainloader, valloader, testloader, 
         criterion, optimizer, scheduler, 
@@ -680,3 +642,6 @@ def main():
     logger.info(f"Final model saved as {final_model_path}")
     
     logger.info("Training complete!")
+
+if __name__ == "__main__":
+    main()

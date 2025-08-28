@@ -34,7 +34,7 @@ import numpy as np
 from vivit_old import ViViT, load_video
 # Import your ViViT model and load_video function from vivit.py
 # ----------------------- Logging Setup -----------------------
-log_filename = f'kinetics_training_{datetime.now().strftime("%Y%m%d")}.log'
+log_filename = f'./vivit_ucf101_pretrained/vivit_ucfcrime_training_{datetime.now().strftime("%Y%m%d")}.log'
 logging.basicConfig(
     filename=log_filename,
     level=logging.INFO,
@@ -85,7 +85,7 @@ class VideoDataset(Dataset):
         return video, label
 
 # ----------------------- Data Preparation -----------------------
-def load_data(data_root="/path/to/your/dataset"):
+def load_data(data_root="../../ucf_crime"):
     """
     Load data from a single folder containing class subdirectories and split into 56/14/30 train/val/test
     """
@@ -583,7 +583,7 @@ def main():
         device = torch.device("cpu")
         logger.info("No GPU available, using CPU")
     
-    checkpoints_dir = f"checkpoints_{datetime.now().strftime('%Y%m%d_%H%M')}"
+    checkpoints_dir = f"./vivit_ucf101_pretrained/checkpoints_{datetime.now().strftime('%Y%m%d_%H%M')}"
     logger.info(f"Creating checkpoints directory: {checkpoints_dir}")
     os.makedirs(checkpoints_dir, exist_ok=True)
     
@@ -633,7 +633,7 @@ def main():
     model = ViViT(image_size=224, patch_size=16, num_classes=len(data_subset), num_frames=16)
     
     # Load pre-trained weights (update path to your pre-trained model)
-    pretrained_weights_path = "path/to/your/pretrained_vivit_101_classes.pth"  # Update this path
+    pretrained_weights_path = "vivit_ucf101_best_model.pth"  # Update this path
     model = load_pretrained_weights(model, pretrained_weights_path, num_classes_pretrained=101, num_classes_current=len(data_subset))
     
     model = prepare_model(model, num_gpus=NUM_GPUS)
@@ -660,8 +660,8 @@ def main():
         logger.info("Starting training from scratch.")
     
     logger.info("Starting training...")
-    additional_epochs = 40
-    patience = 5
+    additional_epochs = 300
+    patience = 15
     best_val_loss, metrics = train_model(
         model, trainloader, valloader, testloader, 
         criterion, optimizer, scheduler, 
@@ -680,3 +680,6 @@ def main():
     logger.info(f"Final model saved as {final_model_path}")
     
     logger.info("Training complete!")
+
+if __name__ == "__main__":
+    main()
