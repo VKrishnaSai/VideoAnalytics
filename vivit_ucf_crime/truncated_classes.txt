@@ -1,0 +1,14 @@
+Abuse
+Arrest
+Arson
+Assault
+Burglary
+Explosion
+Fighting
+Normal_Videos_for_Event_Recognition
+RoadAccidents
+Robbery
+Shooting
+Shoplifting
+Stealing
+Vandalism
